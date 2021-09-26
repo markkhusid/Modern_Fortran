@@ -20,10 +20,10 @@ program tsunami
     
     call set_gaussian(h, icenter, decay)
     
-    print *, 0, h
+    !print *, 0, h
     time_loop: do n = 1, num_time_steps
         h = h - c * diff(h) / dx * dt
-        print *, n, h
+        !print *, n, h
     end do time_loop
 
 contains
