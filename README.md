@@ -1,2 +1,4 @@
 # Modern_Fortran
-Modern Fortran book by Manning
+"Building efficient parallel applications"
+By: Milan Curcic
+Publisher: Manning Publications C0. 2020
