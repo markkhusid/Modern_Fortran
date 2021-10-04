@@ -1,2 +1,2 @@
 # Modern_Fortran
-Modern Fortran book by Manley
+Modern Fortran book by Manning
