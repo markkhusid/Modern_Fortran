@@ -29,7 +29,7 @@ program tsunami
     call set_gaussian(h, icenter, decay)
     u = 0
     
-    print *, 0, h
+    !print *, 0, h
     write (9, *) 0, h
     close(9)
     
@@ -38,7 +38,7 @@ program tsunami
         u = u - (u * diff(u) + g * diff(h)) / dx * dt
         h = h - diff(u * (hmean + h)) / dx * dt
         
-        print *, n, h
+        !print *, n, h
         
         inquire(file = 'data.txt', exist = file_exists)
         if (file_exists) then
