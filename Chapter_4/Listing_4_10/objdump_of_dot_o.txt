@@ -1,0 +1,2551 @@
+
+tsunami.o:     file format elf64-x86-64
+tsunami.o
+architecture: i386:x86-64, flags 0x00000011:
+HAS_RELOC, HAS_SYMS
+start address 0x0000000000000000
+
+Sections:
+Idx Name          Size      VMA               LMA               File off  Algn
+  0 .text         00000988  0000000000000000  0000000000000000  00000040  2**0
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  0000000000000000  0000000000000000  000009c8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  0000000000000000  0000000000000000  000009c8  2**0
+                  ALLOC
+  3 .rodata       00000068  0000000000000000  0000000000000000  000009d0  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .debug_info   000002a8  0000000000000000  0000000000000000  00000a38  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING, OCTETS
+  5 .debug_abbrev 0000016d  0000000000000000  0000000000000000  00000ce0  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+  6 .debug_aranges 00000030  0000000000000000  0000000000000000  00000e4d  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING, OCTETS
+  7 .debug_macro  00000010  0000000000000000  0000000000000000  00000e7d  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING, OCTETS
+  8 .debug_line   00000121  0000000000000000  0000000000000000  00000e8d  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING, OCTETS
+  9 .debug_str    0000025d  0000000000000000  0000000000000000  00000fae  2**0
+                  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .comment      0000002b  0000000000000000  0000000000000000  0000120b  2**0
+                  CONTENTS, READONLY
+ 11 .note.GNU-stack 00000000  0000000000000000  0000000000000000  00001236  2**0
+                  CONTENTS, READONLY
+ 12 .eh_frame     00000058  0000000000000000  0000000000000000  00001238  2**3
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, DATA
+SYMBOL TABLE:
+0000000000000000 l    df *ABS*	0000000000000000 tsunami.f95
+0000000000000000 l    d  .text	0000000000000000 .text
+0000000000000000 l    d  .data	0000000000000000 .data
+0000000000000000 l    d  .bss	0000000000000000 .bss
+0000000000000000 l    d  .rodata	0000000000000000 .rodata
+0000000000000000 l     F .text	000000000000094b MAIN__
+0000000000000040 l     O .rodata	000000000000001c options.27.4024
+0000000000000000 l    d  .debug_info	0000000000000000 .debug_info
+0000000000000000 l    d  .debug_abbrev	0000000000000000 .debug_abbrev
+0000000000000000 l    d  .debug_aranges	0000000000000000 .debug_aranges
+0000000000000000 l    d  .debug_macro	0000000000000000 .debug_macro
+0000000000000000 l    d  .debug_line	0000000000000000 .debug_line
+0000000000000000 l    d  .debug_str	0000000000000000 .debug_str
+0000000000000000 l    d  .note.GNU-stack	0000000000000000 .note.GNU-stack
+0000000000000000 l    d  .eh_frame	0000000000000000 .eh_frame
+0000000000000000 l    d  .comment	0000000000000000 .comment
+0000000000000000         *UND*	0000000000000000 _GLOBAL_OFFSET_TABLE_
+0000000000000000         *UND*	0000000000000000 _gfortran_st_open
+0000000000000000         *UND*	0000000000000000 __mod_initial_MOD_set_gaussian
+0000000000000000         *UND*	0000000000000000 _gfortran_st_write
+0000000000000000         *UND*	0000000000000000 _gfortran_transfer_integer_write
+0000000000000000         *UND*	0000000000000000 _gfortran_transfer_array_write
+0000000000000000         *UND*	0000000000000000 _gfortran_st_write_done
+0000000000000000         *UND*	0000000000000000 _gfortran_st_close
+0000000000000000         *UND*	0000000000000000 __mod_diff_MOD_diff_centered
+0000000000000000         *UND*	0000000000000000 _gfortran_st_inquire
+000000000000094b g     F .text	000000000000003d main
+0000000000000000         *UND*	0000000000000000 _gfortran_set_args
+0000000000000000         *UND*	0000000000000000 _gfortran_set_options
+
+
+Contents of section .text:
+ 0000 554889e5 4881ecf0 07000048 8d050000  UH..H......H....
+ 0010 00004889 85a8faff ffc785b0 faffff17  ..H.............
+ 0020 00000048 8d050000 00004889 85e0faff  ...H......H.....
+ 0030 ff48c785 d8faffff 08000000 c785d0fb  .H..............
+ 0040 ffff0000 0000c785 a0faffff 00010001  ................
+ 0050 c785a4fa ffff0900 0000488d 85a0faff  ..........H.....
+ 0060 ff4889c7 e8000000 0048c785 c0faffff  .H.......H......
+ 0070 04000000 48c785b0 faffff00 00000048  ....H..........H
+ 0080 c785b8fa ffff0000 000048c7 85b0faff  ..........H.....
+ 0090 ff040000 00c685bc faffff01 c685bdfa  ................
+ 00a0 ffff0348 c785d0fa ffff0100 000048c7  ...H..........H.
+ 00b0 85d8faff ff640000 0048c785 c8faffff  .....d...H......
+ 00c0 01000000 488d8560 feffff48 8985a0fa  ....H..`...H....
+ 00d0 ffff48c7 85a8faff ffffffff ff488d85  ..H..........H..
+ 00e0 a0faffff 488d1500 00000048 8d350000  ....H......H.5..
+ 00f0 00004889 c7e80000 0000488d 95c0fcff  ..H.......H.....
+ 0100 ffb80000 0000b932 00000048 89d7f348  .......2...H...H
+ 0110 ab488d05 00000000 488985a8 faffffc7  .H......H.......
+ 0120 85b0faff ff210000 00c785a0 faffff80  .....!..........
+ 0130 000000c7 85a4faff ff090000 00488d85  .............H..
+ 0140 a0faffff 4889c7e8 00000000 488d85a0  ....H.......H...
+ 0150 faffffba 04000000 488d3500 00000048  ........H.5....H
+ 0160 89c7e800 00000048 c78530f9 ffff0400  .......H..0.....
+ 0170 000048c7 8520f9ff ff000000 0048c785  ..H.. .......H..
+ 0180 28f9ffff 00000000 48c78520 f9ffff04  (.......H.. ....
+ 0190 000000c6 852cf9ff ff01c685 2df9ffff  .....,......-...
+ 01a0 0348c785 40f9ffff 01000000 48c78548  .H..@.......H..H
+ 01b0 f9ffff64 00000048 c78538f9 ffff0100  ...d...H..8.....
+ 01c0 0000488d 8560feff ff488985 10f9ffff  ..H..`...H......
+ 01d0 48c78518 f9ffffff ffffff48 8db510f9  H..........H....
+ 01e0 ffff488d 85a0faff ffb90000 0000ba04  ..H.............
+ 01f0 00000048 89c7e800 00000048 8d85a0fa  ...H.......H....
+ 0200 ffff4889 c7e80000 0000488d 05000000  ..H.......H.....
+ 0210 00488985 a8faffff c785b0fa ffff2200  .H............".
+ 0220 0000c785 a0faffff 00000000 c785a4fa  ................
+ 0230 ffff0900 0000488d 85a0faff ff4889c7  ......H......H..
+ 0240 e8000000 00c7855c feffff01 0000008b  .......\........
+ 0250 855cfeff ff3d8813 00000f9f c00fb6c0  .\...=..........
+ 0260 85c00f85 a4060000 48c78530 f8ffff04  ........H..0....
+ 0270 00000048 c78520f8 ffff0000 000048c7  ...H.. .......H.
+ 0280 8528f8ff ff000000 0048c785 20f8ffff  .(.......H.. ...
+ 0290 04000000 c6852cf8 ffff01c6 852df8ff  ......,......-..
+ 02a0 ff0348c7 8540f8ff ff010000 0048c785  ..H..@.......H..
+ 02b0 48f8ffff 64000000 48c78538 f8ffff01  H...d...H..8....
+ 02c0 00000048 8d85c0fc ffff4889 8510f8ff  ...H......H.....
+ 02d0 ff48c785 18f8ffff ffffffff 488d9510  .H..........H...
+ 02e0 f8ffff48 c78560f8 ffff0000 000048c7  ...H..`.......H.
+ 02f0 8568f8ff ff000000 0048c785 60f8ffff  .h.......H..`...
+ 0300 04000000 c6856cf8 ffff01c6 856df8ff  ......l......m..
+ 0310 ff0348c7 8578f8ff ff010000 0048c785  ..H..x.......H..
+ 0320 80f8ffff 00000000 48c78588 f8ffff63  ........H......c
+ 0330 00000048 c78570f8 ffff0400 0000488d  ...H..p.......H.
+ 0340 8510f9ff ff488985 50f8ffff 48c78558  .....H..P...H..X
+ 0350 f8ffff00 00000048 8d8550f8 ffff4889  .......H..P...H.
+ 0360 d64889c7 e8000000 0048c785 b0f8ffff  .H.......H......
+ 0370 04000000 48c785a0 f8ffff00 00000048  ....H..........H
+ 0380 c785a8f8 ffff0000 000048c7 85a0f8ff  ..........H.....
+ 0390 ff040000 00c685ac f8ffff01 c685adf8  ................
+ 03a0 ffff0348 c785c0f8 ffff0100 000048c7  ...H..........H.
+ 03b0 85c8f8ff ff640000 0048c785 b8f8ffff  .....d...H......
+ 03c0 01000000 488d8560 feffff48 898590f8  ....H..`...H....
+ 03d0 ffff48c7 8598f8ff ffffffff ff488d95  ..H..........H..
+ 03e0 90f8ffff 48c785e0 f8ffff00 00000048  ....H..........H
+ 03f0 c785e8f8 ffff0000 000048c7 85e0f8ff  ..........H.....
+ 0400 ff040000 00c685ec f8ffff01 c685edf8  ................
+ 0410 ffff0348 c785f8f8 ffff0100 000048c7  ...H..........H.
+ 0420 8500f9ff ff000000 0048c785 08f9ffff  .........H......
+ 0430 63000000 48c785f0 f8ffff04 00000048  c...H..........H
+ 0440 8d85a0fa ffff4889 85d0f8ff ff48c785  ......H......H..
+ 0450 d8f8ffff 00000000 488d85d0 f8ffff48  ........H......H
+ 0460 89d64889 c7e80000 0000b800 00000048  ..H............H
+ 0470 83f8637f 60f30f10 8485c0fc fffff30f  ..c.`...........
+ 0480 109485c0 fcffff48 8b9550f8 fffff30f  .......H..P.....
+ 0490 100c82f3 0f59d148 8b95d0f8 fffff30f  .....Y.H........
+ 04a0 101c82f3 0f100d00 000000f3 0f59cbf3  .............Y..
+ 04b0 0f58ca0f 28d1f30f 100d0000 0000f30f  .X..(...........
+ 04c0 59caf30f 5cc1f30f 118485c0 fcffff48  Y...\..........H
+ 04d0 83c001eb 9a48c785 a0f8ffff 00000000  .....H..........
+ 04e0 48c785a8 f8ffff00 00000048 c785a0f8  H..........H....
+ 04f0 ffff0400 0000c685 acf8ffff 01c685ad  ................
+ 0500 f8ffff03 48c785b8 f8ffff01 00000048  ....H..........H
+ 0510 c785c0f8 ffff0000 000048c7 85c8f8ff  ..........H.....
+ 0520 ff630000 0048c785 b0f8ffff 04000000  .c...H..........
+ 0530 488d8510 f9ffff48 898590f8 ffff48c7  H......H......H.
+ 0540 8598f8ff ff000000 00b80000 00004883  ..............H.
+ 0550 f8637f34 f30f1084 85c0fcff fff30f10  .c.4............
+ 0560 948560fe fffff30f 100d0000 0000f30f  ..`.............
+ 0570 58ca488b 9590f8ff fff30f59 c1f30f11  X.H........Y....
+ 0580 04824883 c001ebc6 488d9590 f8ffff48  ..H.....H......H
+ 0590 c785e0f8 ffff0000 000048c7 85e8f8ff  ..........H.....
+ 05a0 ff000000 0048c785 e0f8ffff 04000000  .....H..........
+ 05b0 c685ecf8 ffff01c6 85edf8ff ff0348c7  ..............H.
+ 05c0 85f8f8ff ff010000 0048c785 00f9ffff  .........H......
+ 05d0 00000000 48c78508 f9ffff63 00000048  ....H......c...H
+ 05e0 c785f0f8 ffff0400 0000488d 85a0faff  ..........H.....
+ 05f0 ff488985 d0f8ffff 48c785d8 f8ffff00  .H......H.......
+ 0600 00000048 8d85d0f8 ffff4889 d64889c7  ...H......H..H..
+ 0610 e8000000 00b80000 00004883 f8637f34  ..........H..c.4
+ 0620 f30f1084 8560feff ff488b95 d0f8ffff  .....`...H......
+ 0630 f30f1014 82f30f10 0d000000 00f30f59  ...............Y
+ 0640 caf30f5c c1f30f11 848560fe ffff4883  ...\......`...H.
+ 0650 c001ebc6 488d0500 00000048 8985a8fa  ....H......H....
+ 0660 ffffc785 b0faffff 2b000000 488d0500  ........+...H...
+ 0670 00000048 898508fb ffff48c7 8510fbff  ...H......H.....
+ 0680 ff080000 00488d45 fc488985 d0faffff  .....H.E.H......
+ 0690 c785a0fa ffff8040 0000c785 a4faffff  .......@........
+ 06a0 00000000 488d85a0 faffff48 89c7e800  ....H......H....
+ 06b0 0000008b 45fc85c0 0f84ae00 0000488d  ....E.........H.
+ 06c0 05000000 00488985 a8faffff c785b0fa  .....H..........
+ 06d0 ffff2d00 0000488d 05000000 00488985  ..-...H......H..
+ 06e0 e0faffff 48c785d8 faffff08 00000048  ....H..........H
+ 06f0 8d050000 00004889 85e8faff ff48c785  ......H......H..
+ 0700 f0faffff 03000000 488d0500 00000048  ........H......H
+ 0710 898528fb ffff48c7 8530fbff ff060000  ..(...H..0......
+ 0720 00488d05 00000000 48898540 fbffff48  .H......H..@...H
+ 0730 c78538fb ffff0500 0000c785 d0fbffff  ..8.............
+ 0740 00000000 c785a0fa ffff0063 0001c785  ...........c....
+ 0750 a4faffff 09000000 488d85a0 faffff48  ........H......H
+ 0760 89c7e800 000000e9 90000000 488d0500  ............H...
+ 0770 00000048 8985a8fa ffffc785 b0faffff  ...H............
+ 0780 2f000000 488d0500 00000048 8985e0fa  /...H......H....
+ 0790 ffff48c7 85d8faff ff080000 00488d05  ..H..........H..
+ 07a0 00000000 488985e8 faffff48 c785f0fa  ....H......H....
+ 07b0 ffff0300 0000488d 05000000 00488985  ......H......H..
+ 07c0 40fbffff 48c78538 fbffff05 000000c7  @...H..8........
+ 07d0 85d0fbff ff000000 00c785a0 faffff00  ................
+ 07e0 430001c7 85a4faff ff090000 00488d85  C............H..
+ 07f0 a0faffff 4889c7e8 00000000 488d0500  ....H.......H...
+ 0800 00000048 8985a8fa ffffc785 b0faffff  ...H............
+ 0810 32000000 c785a0fa ffff8000 0000c785  2...............
+ 0820 a4faffff 09000000 488d85a0 faffff48  ........H......H
+ 0830 89c7e800 00000048 8d8d5cfe ffff488d  .......H..\...H.
+ 0840 85a0faff ffba0400 00004889 ce4889c7  ..........H..H..
+ 0850 e8000000 0048c785 30f9ffff 04000000  .....H..0.......
+ 0860 48c78520 f9ffff00 00000048 c78528f9  H.. .......H..(.
+ 0870 ffff0000 000048c7 8520f9ff ff040000  ......H.. ......
+ 0880 00c6852c f9ffff01 c6852df9 ffff0348  ...,......-....H
+ 0890 c78540f9 ffff0100 000048c7 8548f9ff  ..@.......H..H..
+ 08a0 ff640000 0048c785 38f9ffff 01000000  .d...H..8.......
+ 08b0 488d8560 feffff48 898510f9 ffff48c7  H..`...H......H.
+ 08c0 8518f9ff ffffffff ff488db5 10f9ffff  .........H......
+ 08d0 488d85a0 faffffb9 00000000 ba040000  H...............
+ 08e0 004889c7 e8000000 00488d85 a0faffff  .H.......H......
+ 08f0 4889c7e8 00000000 8b855cfe ffff83c0  H.........\.....
+ 0900 0189855c feffffe9 43f9ffff 90488d05  ...\....C....H..
+ 0910 00000000 488985a8 faffffc7 85b0faff  ....H...........
+ 0920 ff360000 00c785a0 faffff00 000000c7  .6..............
+ 0930 85a4faff ff090000 00488d85 a0faffff  .........H......
+ 0940 4889c7e8 00000000 90c9c355 4889e548  H..........UH..H
+ 0950 83ec1089 7dfc4889 75f0488b 55f08b45  ....}.H.u.H.U..E
+ 0960 fc4889d6 89c7e800 00000048 8d350000  .H.........H.5..
+ 0970 0000bf07 000000e8 00000000 e87ff6ff  ................
+ 0980 ffb80000 0000c9c3                    ........        
+Contents of section .rodata:
+ 0000 7473756e 616d692e 66393500 64617461  tsunami.f95.data
+ 0010 2e747874 0ad7a33c 19000000 00000000  .txt...<........
+ 0020 6f6c6461 7070656e 64777269 74656e65  oldappendwritene
+ 0030 77000000 00000000 00000000 00000000  w...............
+ 0040 44080000 ff0f0000 00000000 01000000  D...............
+ 0050 01000000 00000000 1f000000 cdcc1c41  ...............A
+ 0060 0ad7a33c 00002041                    ...<.. A        
+Contents of section .debug_info:
+ 0000 a4020000 04000000 00000801 00000000  ................
+ 0010 0e020000 00000000 00000000 00000000  ................
+ 0020 00008809 00000000 00000000 00000000  ................
+ 0030 00000208 05000000 00030804 39000000  ............9...
+ 0040 05000000 00010102 00000000 00000000  ................
+ 0050 4b090000 00000000 019c4e01 00000601  K.........N.....
+ 0060 05570100 00070104 00000000 d9010000  .W..............
+ 0070 08000000 000113a9 01000004 0ad7a33c  ...............<
+ 0080 09647400 010da901 0000040a d7a33c09  .dt...........<.
+ 0090 64780001 0da90100 00040000 803f0967  dx...........?.g
+ 00a0 00010da9 01000004 cdcc1c41 0a000000  ...........A....
+ 00b0 00010bc0 01000064 08000000 00010ea9  .......d........
+ 00c0 01000004 00002041 0a000000 000112c0  ...... A........
+ 00d0 01000019 0b000000 00010cc0 01000088  ................
+ 00e0 130c0000 00000115 93020000 02916c0d  ..............l.
+ 00f0 68000110 9a020000 0391d07c 0d6e0001  h..........|.n..
+ 0100 09b90100 000391cc 7c0d7500 01109a02  ........|.u.....
+ 0110 00000391 b0790e00 00000000 00000091  .....y..........
+ 0120 00000000 00000036 0100000f c0010000  .......6........
+ 0130 0fa90100 00001000 00000000 0000001b  ................
+ 0140 00000000 0000000f c0010000 00001100  ................
+ 0150 00000073 01000012 00000000 011d0000  ...s............
+ 0160 00001379 01000013 b4010000 13cb0100  ...y............
+ 0170 00000014 087e0100 00047301 00001502  .....~....s.....
+ 0180 9706a201 0000a201 0000160b 31972338  ............1.#8
+ 0190 06972330 061c2209 97232806 97232006  ..#0.."..#(..# .
+ 01a0 1e000204 04000000 0017a201 00001408  ................
+ 01b0 b9010000 04ae0100 00020405 00000000  ................
+ 01c0 17b90100 001408a2 01000004 c5010000  ................
+ 01d0 11000000 00f00100 00120000 00000126  ...............&
+ 01e0 00000000 13f00100 00131e02 00000000  ................
+ 01f0 1408f601 00001502 9706a201 00001802  ................
+ 0200 00001804 97233006 04972338 06099723  .....#0...#8...#
+ 0210 28069723 20061e00 14082302 00000418  (..# .....#.....
+ 0220 02000015 029706a2 01000047 02000016  ...........G....
+ 0230 0b319723 38069723 30061c22 09972328  .1.#8..#0.."..#(
+ 0240 06972320 061e0019 00000000 0104b901  ..# ............
+ 0250 00000000 00000000 00003d00 00000000  ..........=.....
+ 0260 0000019c 86020000 1a000000 000104c0  ................
+ 0270 01000002 916c1a00 00000001 04860200  .....l..........
+ 0280 00039160 06001b08 8c020000 02010800  ...`............
+ 0290 00000002 04020000 00001ca2 0100001d  ................
+ 02a0 32000000 e4000000                    2.......        
+Contents of section .debug_abbrev:
+ 0000 01110125 0e130b42 0b030e1b 0e110112  ...%...B........
+ 0010 07101799 42170000 0224000b 0b3e0b03  ....B....$...>..
+ 0020 0e000003 0f000b0b 00000437 00491300  ...........7.I..
+ 0030 00052e01 030e3a0b 3b0b6a19 360b1101  ......:.;.j.6...
+ 0040 12074018 96421901 13000006 08003a0b  ..@..B........:.
+ 0050 3b0b1813 00000708 003a0b3b 0b030e18  ;........:.;....
+ 0060 13000008 2700030e 3a0b3b0b 49131c0a  ....'...:.;.I...
+ 0070 00000927 0003083a 0b3b0b49 131c0a00  ...'...:.;.I....
+ 0080 000a2700 030e3a0b 3b0b4913 1c0b0000  ..'...:.;.I.....
+ 0090 0b270003 0e3a0b3b 0b49131c 0500000c  .'...:.;.I......
+ 00a0 3400030e 3a0b3b0b 49130218 00000d34  4...:.;.I......4
+ 00b0 0003083a 0b3b0b49 13021800 000e0b01  ...:.;.I........
+ 00c0 11011207 01130000 0f270049 13000010  .........'.I....
+ 00d0 0b011101 12070000 111e0103 0e3c1901  .............<..
+ 00e0 13000012 2e013f19 030e3a0b 3b0b6e0e  ......?...:.;.n.
+ 00f0 3c190000 13050049 13000014 10000b0b  <......I........
+ 0100 49130000 15010150 18491301 13000016  I......P.I......
+ 0110 21002f18 51180000 17260049 13000018  !./.Q....&.I....
+ 0120 21002218 2f185118 0000192e 013f1903  !."./.Q......?..
+ 0130 0e3a0b3b 0b491311 01120740 18964219  .:.;.I.....@..B.
+ 0140 01130000 1a050003 0e3a0b3b 0b491302  .........:.;.I..
+ 0150 1800001b 0f000b0b 49130000 1c010149  ........I......I
+ 0160 1300001d 21004913 2f0d0000 00        ....!.I./....   
+Contents of section .debug_aranges:
+ 0000 2c000000 02000000 00000800 00000000  ,...............
+ 0010 00000000 00000000 88090000 00000000  ................
+ 0020 00000000 00000000 00000000 00000000  ................
+Contents of section .debug_macro:
+ 0000 04000200 00000003 00010300 02040400  ................
+Contents of section .debug_line:
+ 0000 1d010000 03008900 00000101 fb0e0d00  ................
+ 0010 01010101 00000001 0000012f 7573722f  .........../usr/
+ 0020 6c69622f 6763632f 7838365f 36342d6c  lib/gcc/x86_64-l
+ 0030 696e7578 2d676e75 2f392f2e 2e2f2e2e  inux-gnu/9/../..
+ 0040 2f2e2e2f 2e2e2f78 38365f36 342d6c69  /../../x86_64-li
+ 0050 6e75782d 676e752f 696e636c 7564652f  nux-gnu/include/
+ 0060 66696e63 6c756465 00007473 756e616d  finclude..tsunam
+ 0070 692e6639 35000000 006d6174 682d7665  i.f95....math-ve
+ 0080 63746f72 2d666f72 7472616e 2e680001  ctor-fortran.h..
+ 0090 00000000 09020000 00000000 00000103  ................
+ 00a0 16ac025e 18029101 13086902 f9011302  ...^......i.....
+ 00b0 3b140002 0401069e 06088400 02040306  ;...............
+ 00c0 02870412 00020402 66060260 13000204  ........f..`....
+ 00d0 04060279 12000204 03660002 04020234  ...y.....f.....4
+ 00e0 12000204 07029201 12000204 06660602  .............f..
+ 00f0 3416025f 13ad0002 040202ae 01140002  4.._............
+ 0100 04010290 01150002 04010372 02fc0101  ...........r....
+ 0110 030e083c 24023b14 034c3ce4 022e0001  ...<$.;..L<.....
+ 0120 01                                   .               
+Contents of section .debug_str:
+ 0000 66696c65 5f657869 73747300 7473756e  file_exists.tsun
+ 0010 616d6900 6e756d5f 74696d65 5f737465  ami.num_time_ste
+ 0020 7073006d 61696e00 5f5f6d6f 645f6469  ps.main.__mod_di
+ 0030 66665f4d 4f445f64 6966665f 63656e74  ff_MOD_diff_cent
+ 0040 65726564 00696365 6e746572 006c6f67  ered.icenter.log
+ 0050 6963616c 286b696e 643d3429 00646966  ical(kind=4).dif
+ 0060 665f6365 6e746572 65640067 7269645f  f_centered.grid_
+ 0070 73697a65 00696e74 65676572 286b696e  size.integer(kin
+ 0080 643d3429 00736574 5f676175 73736961  d=4).set_gaussia
+ 0090 6e006d6f 645f6469 66660047 4e552046  n.mod_diff.GNU F
+ 00a0 6f727472 616e3230 30382039 2e332e30  ortran2008 9.3.0
+ 00b0 202d6d74 756e653d 67656e65 72696320   -mtune=generic 
+ 00c0 2d6d6172 63683d78 38362d36 34202d67  -march=x86-64 -g
+ 00d0 67646233 202d6669 6e747269 6e736963  gdb3 -fintrinsic
+ 00e0 2d6d6f64 756c6573 2d706174 68202f75  -modules-path /u
+ 00f0 73722f6c 69622f67 63632f78 38365f36  sr/lib/gcc/x86_6
+ 0100 342d6c69 6e75782d 676e752f 392f6669  4-linux-gnu/9/fi
+ 0110 6e636c75 6465202d 66707265 2d696e63  nclude -fpre-inc
+ 0120 6c756465 3d2f7573 722f6c69 622f6763  lude=/usr/lib/gc
+ 0130 632f7838 365f3634 2d6c696e 75782d67  c/x86_64-linux-g
+ 0140 6e752f39 2f2e2e2f 2e2e2f2e 2e2f2e2e  nu/9/../../../..
+ 0150 2f783836 5f36342d 6c696e75 782d676e  /x86_64-linux-gn
+ 0160 752f696e 636c7564 652f6669 6e636c75  u/include/finclu
+ 0170 64652f6d 6174682d 76656374 6f722d66  de/math-vector-f
+ 0180 6f727472 616e2e68 00646563 61790063  ortran.h.decay.c
+ 0190 68617261 63746572 286b696e 643d3129  haracter(kind=1)
+ 01a0 002f686f 6d652f75 62756e74 752f456e  ./home/ubuntu/En
+ 01b0 67696e65 6572696e 672f5072 6f677261  gineering/Progra
+ 01c0 6d6d696e 672f466f 72747261 6e2f4d6f  mming/Fortran/Mo
+ 01d0 6465726e 5f466f72 7472616e 2f436861  dern_Fortran/Cha
+ 01e0 70746572 5f342f4c 69737469 6e675f34  pter_4/Listing_4
+ 01f0 5f313000 61726763 005f5f6d 6f645f69  _10.argc.__mod_i
+ 0200 6e697469 616c5f4d 4f445f73 65745f67  nitial_MOD_set_g
+ 0210 61757373 69616e00 7473756e 616d692e  aussian.tsunami.
+ 0220 66393500 696e7465 67657228 6b696e64  f95.integer(kind
+ 0230 3d382900 6d6f645f 696e6974 69616c00  =8).mod_initial.
+ 0240 686d6561 6e006469 66660072 65616c28  hmean.diff.real(
+ 0250 6b696e64 3d342900 61726776 00        kind=4).argv.   
+Contents of section .comment:
+ 0000 00474343 3a202855 62756e74 7520392e  .GCC: (Ubuntu 9.
+ 0010 332e302d 31377562 756e7475 317e3230  3.0-17ubuntu1~20
+ 0020 2e303429 20392e33 2e3000             .04) 9.3.0.     
+Contents of section .eh_frame:
+ 0000 14000000 00000000 017a5200 01781001  .........zR..x..
+ 0010 1b0c0708 90010000 1c000000 1c000000  ................
+ 0020 00000000 4b090000 00410e10 8602430d  ....K....A....C.
+ 0030 06034609 0c070800 1c000000 3c000000  ..F.........<...
+ 0040 00000000 3d000000 00410e10 8602430d  ....=....A....C.
+ 0050 06780c07 08000000                    .x......        
+
+Disassembly of section .text:
+
+0000000000000000 <MAIN__>:
+program tsunami
+   0:	55                   	push   %rbp
+   1:	48 89 e5             	mov    %rsp,%rbp
+   4:	48 81 ec f0 07 00 00 	sub    $0x7f0,%rsp
+    integer(int32), parameter :: icenter = 25
+    real(real32), parameter   :: decay = 0.02
+    
+    logical :: file_exists
+    
+    open(9, file = 'data.txt')
+   b:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 12 <MAIN__+0x12>
+			e: R_X86_64_PC32	.rodata-0x4
+  12:	48 89 85 a8 fa ff ff 	mov    %rax,-0x558(%rbp)
+  19:	c7 85 b0 fa ff ff 17 	movl   $0x17,-0x550(%rbp)
+  20:	00 00 00 
+  23:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 2a <MAIN__+0x2a>
+			26: R_X86_64_PC32	.rodata+0x8
+  2a:	48 89 85 e0 fa ff ff 	mov    %rax,-0x520(%rbp)
+  31:	48 c7 85 d8 fa ff ff 	movq   $0x8,-0x528(%rbp)
+  38:	08 00 00 00 
+  3c:	c7 85 d0 fb ff ff 00 	movl   $0x0,-0x430(%rbp)
+  43:	00 00 00 
+  46:	c7 85 a0 fa ff ff 00 	movl   $0x1000100,-0x560(%rbp)
+  4d:	01 00 01 
+  50:	c7 85 a4 fa ff ff 09 	movl   $0x9,-0x55c(%rbp)
+  57:	00 00 00 
+  5a:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+  61:	48 89 c7             	mov    %rax,%rdi
+  64:	e8 00 00 00 00       	callq  69 <MAIN__+0x69>
+			65: R_X86_64_PLT32	_gfortran_st_open-0x4
+    
+    if (grid_size <= 0) stop 'grid_size must be > 0'
+    if (dt <= 0) stop 'time step dt must be > 0'
+    if (dx <= 0) stop 'grid spacing dx must be > 0'
+    
+    call set_gaussian(h, icenter, decay)
+  69:	48 c7 85 c0 fa ff ff 	movq   $0x4,-0x540(%rbp)
+  70:	04 00 00 00 
+  74:	48 c7 85 b0 fa ff ff 	movq   $0x0,-0x550(%rbp)
+  7b:	00 00 00 00 
+  7f:	48 c7 85 b8 fa ff ff 	movq   $0x0,-0x548(%rbp)
+  86:	00 00 00 00 
+  8a:	48 c7 85 b0 fa ff ff 	movq   $0x4,-0x550(%rbp)
+  91:	04 00 00 00 
+  95:	c6 85 bc fa ff ff 01 	movb   $0x1,-0x544(%rbp)
+  9c:	c6 85 bd fa ff ff 03 	movb   $0x3,-0x543(%rbp)
+  a3:	48 c7 85 d0 fa ff ff 	movq   $0x1,-0x530(%rbp)
+  aa:	01 00 00 00 
+  ae:	48 c7 85 d8 fa ff ff 	movq   $0x64,-0x528(%rbp)
+  b5:	64 00 00 00 
+  b9:	48 c7 85 c8 fa ff ff 	movq   $0x1,-0x538(%rbp)
+  c0:	01 00 00 00 
+  c4:	48 8d 85 60 fe ff ff 	lea    -0x1a0(%rbp),%rax
+  cb:	48 89 85 a0 fa ff ff 	mov    %rax,-0x560(%rbp)
+  d2:	48 c7 85 a8 fa ff ff 	movq   $0xffffffffffffffff,-0x558(%rbp)
+  d9:	ff ff ff ff 
+  dd:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+  e4:	48 8d 15 00 00 00 00 	lea    0x0(%rip),%rdx        # eb <MAIN__+0xeb>
+			e7: R_X86_64_PC32	.rodata+0x10
+  eb:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # f2 <MAIN__+0xf2>
+			ee: R_X86_64_PC32	.rodata+0x14
+  f2:	48 89 c7             	mov    %rax,%rdi
+  f5:	e8 00 00 00 00       	callq  fa <MAIN__+0xfa>
+			f6: R_X86_64_PLT32	__mod_initial_MOD_set_gaussian-0x4
+    u = 0
+  fa:	48 8d 95 c0 fc ff ff 	lea    -0x340(%rbp),%rdx
+ 101:	b8 00 00 00 00       	mov    $0x0,%eax
+ 106:	b9 32 00 00 00       	mov    $0x32,%ecx
+ 10b:	48 89 d7             	mov    %rdx,%rdi
+ 10e:	f3 48 ab             	rep stos %rax,%es:(%rdi)
+    
+    !print *, 0, h
+    write (9, *) 0, h
+ 111:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 118 <MAIN__+0x118>
+			114: R_X86_64_PC32	.rodata-0x4
+ 118:	48 89 85 a8 fa ff ff 	mov    %rax,-0x558(%rbp)
+ 11f:	c7 85 b0 fa ff ff 21 	movl   $0x21,-0x550(%rbp)
+ 126:	00 00 00 
+ 129:	c7 85 a0 fa ff ff 80 	movl   $0x80,-0x560(%rbp)
+ 130:	00 00 00 
+ 133:	c7 85 a4 fa ff ff 09 	movl   $0x9,-0x55c(%rbp)
+ 13a:	00 00 00 
+ 13d:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 144:	48 89 c7             	mov    %rax,%rdi
+ 147:	e8 00 00 00 00       	callq  14c <MAIN__+0x14c>
+			148: R_X86_64_PLT32	_gfortran_st_write-0x4
+ 14c:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 153:	ba 04 00 00 00       	mov    $0x4,%edx
+ 158:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 15f <MAIN__+0x15f>
+			15b: R_X86_64_PC32	.rodata+0x18
+ 15f:	48 89 c7             	mov    %rax,%rdi
+ 162:	e8 00 00 00 00       	callq  167 <MAIN__+0x167>
+			163: R_X86_64_PLT32	_gfortran_transfer_integer_write-0x4
+ 167:	48 c7 85 30 f9 ff ff 	movq   $0x4,-0x6d0(%rbp)
+ 16e:	04 00 00 00 
+ 172:	48 c7 85 20 f9 ff ff 	movq   $0x0,-0x6e0(%rbp)
+ 179:	00 00 00 00 
+ 17d:	48 c7 85 28 f9 ff ff 	movq   $0x0,-0x6d8(%rbp)
+ 184:	00 00 00 00 
+ 188:	48 c7 85 20 f9 ff ff 	movq   $0x4,-0x6e0(%rbp)
+ 18f:	04 00 00 00 
+ 193:	c6 85 2c f9 ff ff 01 	movb   $0x1,-0x6d4(%rbp)
+ 19a:	c6 85 2d f9 ff ff 03 	movb   $0x3,-0x6d3(%rbp)
+ 1a1:	48 c7 85 40 f9 ff ff 	movq   $0x1,-0x6c0(%rbp)
+ 1a8:	01 00 00 00 
+ 1ac:	48 c7 85 48 f9 ff ff 	movq   $0x64,-0x6b8(%rbp)
+ 1b3:	64 00 00 00 
+ 1b7:	48 c7 85 38 f9 ff ff 	movq   $0x1,-0x6c8(%rbp)
+ 1be:	01 00 00 00 
+ 1c2:	48 8d 85 60 fe ff ff 	lea    -0x1a0(%rbp),%rax
+ 1c9:	48 89 85 10 f9 ff ff 	mov    %rax,-0x6f0(%rbp)
+ 1d0:	48 c7 85 18 f9 ff ff 	movq   $0xffffffffffffffff,-0x6e8(%rbp)
+ 1d7:	ff ff ff ff 
+ 1db:	48 8d b5 10 f9 ff ff 	lea    -0x6f0(%rbp),%rsi
+ 1e2:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 1e9:	b9 00 00 00 00       	mov    $0x0,%ecx
+ 1ee:	ba 04 00 00 00       	mov    $0x4,%edx
+ 1f3:	48 89 c7             	mov    %rax,%rdi
+ 1f6:	e8 00 00 00 00       	callq  1fb <MAIN__+0x1fb>
+			1f7: R_X86_64_PLT32	_gfortran_transfer_array_write-0x4
+ 1fb:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 202:	48 89 c7             	mov    %rax,%rdi
+ 205:	e8 00 00 00 00       	callq  20a <MAIN__+0x20a>
+			206: R_X86_64_PLT32	_gfortran_st_write_done-0x4
+    close(9)
+ 20a:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 211 <MAIN__+0x211>
+			20d: R_X86_64_PC32	.rodata-0x4
+ 211:	48 89 85 a8 fa ff ff 	mov    %rax,-0x558(%rbp)
+ 218:	c7 85 b0 fa ff ff 22 	movl   $0x22,-0x550(%rbp)
+ 21f:	00 00 00 
+ 222:	c7 85 a0 fa ff ff 00 	movl   $0x0,-0x560(%rbp)
+ 229:	00 00 00 
+ 22c:	c7 85 a4 fa ff ff 09 	movl   $0x9,-0x55c(%rbp)
+ 233:	00 00 00 
+ 236:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 23d:	48 89 c7             	mov    %rax,%rdi
+ 240:	e8 00 00 00 00       	callq  245 <MAIN__+0x245>
+			241: R_X86_64_PLT32	_gfortran_st_close-0x4
+    
+    time_loop: do n = 1, num_time_steps
+ 245:	c7 85 5c fe ff ff 01 	movl   $0x1,-0x1a4(%rbp)
+ 24c:	00 00 00 
+ 24f:	8b 85 5c fe ff ff    	mov    -0x1a4(%rbp),%eax
+ 255:	3d 88 13 00 00       	cmp    $0x1388,%eax
+ 25a:	0f 9f c0             	setg   %al
+ 25d:	0f b6 c0             	movzbl %al,%eax
+ 260:	85 c0                	test   %eax,%eax
+ 262:	0f 85 a4 06 00 00    	jne    90c <MAIN__+0x90c>
+        
+        u = u - (u * diff(u) + g * diff(h)) / dx * dt
+ 268:	48 c7 85 30 f8 ff ff 	movq   $0x4,-0x7d0(%rbp)
+ 26f:	04 00 00 00 
+ 273:	48 c7 85 20 f8 ff ff 	movq   $0x0,-0x7e0(%rbp)
+ 27a:	00 00 00 00 
+ 27e:	48 c7 85 28 f8 ff ff 	movq   $0x0,-0x7d8(%rbp)
+ 285:	00 00 00 00 
+ 289:	48 c7 85 20 f8 ff ff 	movq   $0x4,-0x7e0(%rbp)
+ 290:	04 00 00 00 
+ 294:	c6 85 2c f8 ff ff 01 	movb   $0x1,-0x7d4(%rbp)
+ 29b:	c6 85 2d f8 ff ff 03 	movb   $0x3,-0x7d3(%rbp)
+ 2a2:	48 c7 85 40 f8 ff ff 	movq   $0x1,-0x7c0(%rbp)
+ 2a9:	01 00 00 00 
+ 2ad:	48 c7 85 48 f8 ff ff 	movq   $0x64,-0x7b8(%rbp)
+ 2b4:	64 00 00 00 
+ 2b8:	48 c7 85 38 f8 ff ff 	movq   $0x1,-0x7c8(%rbp)
+ 2bf:	01 00 00 00 
+ 2c3:	48 8d 85 c0 fc ff ff 	lea    -0x340(%rbp),%rax
+ 2ca:	48 89 85 10 f8 ff ff 	mov    %rax,-0x7f0(%rbp)
+ 2d1:	48 c7 85 18 f8 ff ff 	movq   $0xffffffffffffffff,-0x7e8(%rbp)
+ 2d8:	ff ff ff ff 
+ 2dc:	48 8d 95 10 f8 ff ff 	lea    -0x7f0(%rbp),%rdx
+ 2e3:	48 c7 85 60 f8 ff ff 	movq   $0x0,-0x7a0(%rbp)
+ 2ea:	00 00 00 00 
+ 2ee:	48 c7 85 68 f8 ff ff 	movq   $0x0,-0x798(%rbp)
+ 2f5:	00 00 00 00 
+ 2f9:	48 c7 85 60 f8 ff ff 	movq   $0x4,-0x7a0(%rbp)
+ 300:	04 00 00 00 
+ 304:	c6 85 6c f8 ff ff 01 	movb   $0x1,-0x794(%rbp)
+ 30b:	c6 85 6d f8 ff ff 03 	movb   $0x3,-0x793(%rbp)
+ 312:	48 c7 85 78 f8 ff ff 	movq   $0x1,-0x788(%rbp)
+ 319:	01 00 00 00 
+ 31d:	48 c7 85 80 f8 ff ff 	movq   $0x0,-0x780(%rbp)
+ 324:	00 00 00 00 
+ 328:	48 c7 85 88 f8 ff ff 	movq   $0x63,-0x778(%rbp)
+ 32f:	63 00 00 00 
+ 333:	48 c7 85 70 f8 ff ff 	movq   $0x4,-0x790(%rbp)
+ 33a:	04 00 00 00 
+ 33e:	48 8d 85 10 f9 ff ff 	lea    -0x6f0(%rbp),%rax
+ 345:	48 89 85 50 f8 ff ff 	mov    %rax,-0x7b0(%rbp)
+ 34c:	48 c7 85 58 f8 ff ff 	movq   $0x0,-0x7a8(%rbp)
+ 353:	00 00 00 00 
+ 357:	48 8d 85 50 f8 ff ff 	lea    -0x7b0(%rbp),%rax
+ 35e:	48 89 d6             	mov    %rdx,%rsi
+ 361:	48 89 c7             	mov    %rax,%rdi
+ 364:	e8 00 00 00 00       	callq  369 <MAIN__+0x369>
+			365: R_X86_64_PLT32	__mod_diff_MOD_diff_centered-0x4
+ 369:	48 c7 85 b0 f8 ff ff 	movq   $0x4,-0x750(%rbp)
+ 370:	04 00 00 00 
+ 374:	48 c7 85 a0 f8 ff ff 	movq   $0x0,-0x760(%rbp)
+ 37b:	00 00 00 00 
+ 37f:	48 c7 85 a8 f8 ff ff 	movq   $0x0,-0x758(%rbp)
+ 386:	00 00 00 00 
+ 38a:	48 c7 85 a0 f8 ff ff 	movq   $0x4,-0x760(%rbp)
+ 391:	04 00 00 00 
+ 395:	c6 85 ac f8 ff ff 01 	movb   $0x1,-0x754(%rbp)
+ 39c:	c6 85 ad f8 ff ff 03 	movb   $0x3,-0x753(%rbp)
+ 3a3:	48 c7 85 c0 f8 ff ff 	movq   $0x1,-0x740(%rbp)
+ 3aa:	01 00 00 00 
+ 3ae:	48 c7 85 c8 f8 ff ff 	movq   $0x64,-0x738(%rbp)
+ 3b5:	64 00 00 00 
+ 3b9:	48 c7 85 b8 f8 ff ff 	movq   $0x1,-0x748(%rbp)
+ 3c0:	01 00 00 00 
+ 3c4:	48 8d 85 60 fe ff ff 	lea    -0x1a0(%rbp),%rax
+ 3cb:	48 89 85 90 f8 ff ff 	mov    %rax,-0x770(%rbp)
+ 3d2:	48 c7 85 98 f8 ff ff 	movq   $0xffffffffffffffff,-0x768(%rbp)
+ 3d9:	ff ff ff ff 
+ 3dd:	48 8d 95 90 f8 ff ff 	lea    -0x770(%rbp),%rdx
+ 3e4:	48 c7 85 e0 f8 ff ff 	movq   $0x0,-0x720(%rbp)
+ 3eb:	00 00 00 00 
+ 3ef:	48 c7 85 e8 f8 ff ff 	movq   $0x0,-0x718(%rbp)
+ 3f6:	00 00 00 00 
+ 3fa:	48 c7 85 e0 f8 ff ff 	movq   $0x4,-0x720(%rbp)
+ 401:	04 00 00 00 
+ 405:	c6 85 ec f8 ff ff 01 	movb   $0x1,-0x714(%rbp)
+ 40c:	c6 85 ed f8 ff ff 03 	movb   $0x3,-0x713(%rbp)
+ 413:	48 c7 85 f8 f8 ff ff 	movq   $0x1,-0x708(%rbp)
+ 41a:	01 00 00 00 
+ 41e:	48 c7 85 00 f9 ff ff 	movq   $0x0,-0x700(%rbp)
+ 425:	00 00 00 00 
+ 429:	48 c7 85 08 f9 ff ff 	movq   $0x63,-0x6f8(%rbp)
+ 430:	63 00 00 00 
+ 434:	48 c7 85 f0 f8 ff ff 	movq   $0x4,-0x710(%rbp)
+ 43b:	04 00 00 00 
+ 43f:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 446:	48 89 85 d0 f8 ff ff 	mov    %rax,-0x730(%rbp)
+ 44d:	48 c7 85 d8 f8 ff ff 	movq   $0x0,-0x728(%rbp)
+ 454:	00 00 00 00 
+ 458:	48 8d 85 d0 f8 ff ff 	lea    -0x730(%rbp),%rax
+ 45f:	48 89 d6             	mov    %rdx,%rsi
+ 462:	48 89 c7             	mov    %rax,%rdi
+ 465:	e8 00 00 00 00       	callq  46a <MAIN__+0x46a>
+			466: R_X86_64_PLT32	__mod_diff_MOD_diff_centered-0x4
+ 46a:	b8 00 00 00 00       	mov    $0x0,%eax
+ 46f:	48 83 f8 63          	cmp    $0x63,%rax
+ 473:	7f 60                	jg     4d5 <MAIN__+0x4d5>
+ 475:	f3 0f 10 84 85 c0 fc 	movss  -0x340(%rbp,%rax,4),%xmm0
+ 47c:	ff ff 
+ 47e:	f3 0f 10 94 85 c0 fc 	movss  -0x340(%rbp,%rax,4),%xmm2
+ 485:	ff ff 
+ 487:	48 8b 95 50 f8 ff ff 	mov    -0x7b0(%rbp),%rdx
+ 48e:	f3 0f 10 0c 82       	movss  (%rdx,%rax,4),%xmm1
+ 493:	f3 0f 59 d1          	mulss  %xmm1,%xmm2
+ 497:	48 8b 95 d0 f8 ff ff 	mov    -0x730(%rbp),%rdx
+ 49e:	f3 0f 10 1c 82       	movss  (%rdx,%rax,4),%xmm3
+ 4a3:	f3 0f 10 0d 00 00 00 	movss  0x0(%rip),%xmm1        # 4ab <MAIN__+0x4ab>
+ 4aa:	00 
+			4a7: R_X86_64_PC32	.rodata+0x58
+ 4ab:	f3 0f 59 cb          	mulss  %xmm3,%xmm1
+ 4af:	f3 0f 58 ca          	addss  %xmm2,%xmm1
+ 4b3:	0f 28 d1             	movaps %xmm1,%xmm2
+ 4b6:	f3 0f 10 0d 00 00 00 	movss  0x0(%rip),%xmm1        # 4be <MAIN__+0x4be>
+ 4bd:	00 
+			4ba: R_X86_64_PC32	.rodata+0x5c
+ 4be:	f3 0f 59 ca          	mulss  %xmm2,%xmm1
+ 4c2:	f3 0f 5c c1          	subss  %xmm1,%xmm0
+ 4c6:	f3 0f 11 84 85 c0 fc 	movss  %xmm0,-0x340(%rbp,%rax,4)
+ 4cd:	ff ff 
+ 4cf:	48 83 c0 01          	add    $0x1,%rax
+ 4d3:	eb 9a                	jmp    46f <MAIN__+0x46f>
+        h = h - diff(u * (hmean + h)) / dx * dt
+ 4d5:	48 c7 85 a0 f8 ff ff 	movq   $0x0,-0x760(%rbp)
+ 4dc:	00 00 00 00 
+ 4e0:	48 c7 85 a8 f8 ff ff 	movq   $0x0,-0x758(%rbp)
+ 4e7:	00 00 00 00 
+ 4eb:	48 c7 85 a0 f8 ff ff 	movq   $0x4,-0x760(%rbp)
+ 4f2:	04 00 00 00 
+ 4f6:	c6 85 ac f8 ff ff 01 	movb   $0x1,-0x754(%rbp)
+ 4fd:	c6 85 ad f8 ff ff 03 	movb   $0x3,-0x753(%rbp)
+ 504:	48 c7 85 b8 f8 ff ff 	movq   $0x1,-0x748(%rbp)
+ 50b:	01 00 00 00 
+ 50f:	48 c7 85 c0 f8 ff ff 	movq   $0x0,-0x740(%rbp)
+ 516:	00 00 00 00 
+ 51a:	48 c7 85 c8 f8 ff ff 	movq   $0x63,-0x738(%rbp)
+ 521:	63 00 00 00 
+ 525:	48 c7 85 b0 f8 ff ff 	movq   $0x4,-0x750(%rbp)
+ 52c:	04 00 00 00 
+ 530:	48 8d 85 10 f9 ff ff 	lea    -0x6f0(%rbp),%rax
+ 537:	48 89 85 90 f8 ff ff 	mov    %rax,-0x770(%rbp)
+ 53e:	48 c7 85 98 f8 ff ff 	movq   $0x0,-0x768(%rbp)
+ 545:	00 00 00 00 
+ 549:	b8 00 00 00 00       	mov    $0x0,%eax
+ 54e:	48 83 f8 63          	cmp    $0x63,%rax
+ 552:	7f 34                	jg     588 <MAIN__+0x588>
+ 554:	f3 0f 10 84 85 c0 fc 	movss  -0x340(%rbp,%rax,4),%xmm0
+ 55b:	ff ff 
+ 55d:	f3 0f 10 94 85 60 fe 	movss  -0x1a0(%rbp,%rax,4),%xmm2
+ 564:	ff ff 
+ 566:	f3 0f 10 0d 00 00 00 	movss  0x0(%rip),%xmm1        # 56e <MAIN__+0x56e>
+ 56d:	00 
+			56a: R_X86_64_PC32	.rodata+0x60
+ 56e:	f3 0f 58 ca          	addss  %xmm2,%xmm1
+ 572:	48 8b 95 90 f8 ff ff 	mov    -0x770(%rbp),%rdx
+ 579:	f3 0f 59 c1          	mulss  %xmm1,%xmm0
+ 57d:	f3 0f 11 04 82       	movss  %xmm0,(%rdx,%rax,4)
+ 582:	48 83 c0 01          	add    $0x1,%rax
+ 586:	eb c6                	jmp    54e <MAIN__+0x54e>
+ 588:	48 8d 95 90 f8 ff ff 	lea    -0x770(%rbp),%rdx
+ 58f:	48 c7 85 e0 f8 ff ff 	movq   $0x0,-0x720(%rbp)
+ 596:	00 00 00 00 
+ 59a:	48 c7 85 e8 f8 ff ff 	movq   $0x0,-0x718(%rbp)
+ 5a1:	00 00 00 00 
+ 5a5:	48 c7 85 e0 f8 ff ff 	movq   $0x4,-0x720(%rbp)
+ 5ac:	04 00 00 00 
+ 5b0:	c6 85 ec f8 ff ff 01 	movb   $0x1,-0x714(%rbp)
+ 5b7:	c6 85 ed f8 ff ff 03 	movb   $0x3,-0x713(%rbp)
+ 5be:	48 c7 85 f8 f8 ff ff 	movq   $0x1,-0x708(%rbp)
+ 5c5:	01 00 00 00 
+ 5c9:	48 c7 85 00 f9 ff ff 	movq   $0x0,-0x700(%rbp)
+ 5d0:	00 00 00 00 
+ 5d4:	48 c7 85 08 f9 ff ff 	movq   $0x63,-0x6f8(%rbp)
+ 5db:	63 00 00 00 
+ 5df:	48 c7 85 f0 f8 ff ff 	movq   $0x4,-0x710(%rbp)
+ 5e6:	04 00 00 00 
+ 5ea:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 5f1:	48 89 85 d0 f8 ff ff 	mov    %rax,-0x730(%rbp)
+ 5f8:	48 c7 85 d8 f8 ff ff 	movq   $0x0,-0x728(%rbp)
+ 5ff:	00 00 00 00 
+ 603:	48 8d 85 d0 f8 ff ff 	lea    -0x730(%rbp),%rax
+ 60a:	48 89 d6             	mov    %rdx,%rsi
+ 60d:	48 89 c7             	mov    %rax,%rdi
+ 610:	e8 00 00 00 00       	callq  615 <MAIN__+0x615>
+			611: R_X86_64_PLT32	__mod_diff_MOD_diff_centered-0x4
+ 615:	b8 00 00 00 00       	mov    $0x0,%eax
+ 61a:	48 83 f8 63          	cmp    $0x63,%rax
+ 61e:	7f 34                	jg     654 <MAIN__+0x654>
+ 620:	f3 0f 10 84 85 60 fe 	movss  -0x1a0(%rbp,%rax,4),%xmm0
+ 627:	ff ff 
+ 629:	48 8b 95 d0 f8 ff ff 	mov    -0x730(%rbp),%rdx
+ 630:	f3 0f 10 14 82       	movss  (%rdx,%rax,4),%xmm2
+ 635:	f3 0f 10 0d 00 00 00 	movss  0x0(%rip),%xmm1        # 63d <MAIN__+0x63d>
+ 63c:	00 
+			639: R_X86_64_PC32	.rodata+0x5c
+ 63d:	f3 0f 59 ca          	mulss  %xmm2,%xmm1
+ 641:	f3 0f 5c c1          	subss  %xmm1,%xmm0
+ 645:	f3 0f 11 84 85 60 fe 	movss  %xmm0,-0x1a0(%rbp,%rax,4)
+ 64c:	ff ff 
+ 64e:	48 83 c0 01          	add    $0x1,%rax
+ 652:	eb c6                	jmp    61a <MAIN__+0x61a>
+        
+        !print *, n, h
+        
+        inquire(file = 'data.txt', exist = file_exists)
+ 654:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 65b <MAIN__+0x65b>
+			657: R_X86_64_PC32	.rodata-0x4
+ 65b:	48 89 85 a8 fa ff ff 	mov    %rax,-0x558(%rbp)
+ 662:	c7 85 b0 fa ff ff 2b 	movl   $0x2b,-0x550(%rbp)
+ 669:	00 00 00 
+ 66c:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 673 <MAIN__+0x673>
+			66f: R_X86_64_PC32	.rodata+0x8
+ 673:	48 89 85 08 fb ff ff 	mov    %rax,-0x4f8(%rbp)
+ 67a:	48 c7 85 10 fb ff ff 	movq   $0x8,-0x4f0(%rbp)
+ 681:	08 00 00 00 
+ 685:	48 8d 45 fc          	lea    -0x4(%rbp),%rax
+ 689:	48 89 85 d0 fa ff ff 	mov    %rax,-0x530(%rbp)
+ 690:	c7 85 a0 fa ff ff 80 	movl   $0x4080,-0x560(%rbp)
+ 697:	40 00 00 
+ 69a:	c7 85 a4 fa ff ff 00 	movl   $0x0,-0x55c(%rbp)
+ 6a1:	00 00 00 
+ 6a4:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 6ab:	48 89 c7             	mov    %rax,%rdi
+ 6ae:	e8 00 00 00 00       	callq  6b3 <MAIN__+0x6b3>
+			6af: R_X86_64_PLT32	_gfortran_st_inquire-0x4
+        if (file_exists) then
+ 6b3:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ 6b6:	85 c0                	test   %eax,%eax
+ 6b8:	0f 84 ae 00 00 00    	je     76c <MAIN__+0x76c>
+            open(9, file = 'data.txt', status = 'old', position = 'append', action = 'write')
+ 6be:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 6c5 <MAIN__+0x6c5>
+			6c1: R_X86_64_PC32	.rodata-0x4
+ 6c5:	48 89 85 a8 fa ff ff 	mov    %rax,-0x558(%rbp)
+ 6cc:	c7 85 b0 fa ff ff 2d 	movl   $0x2d,-0x550(%rbp)
+ 6d3:	00 00 00 
+ 6d6:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 6dd <MAIN__+0x6dd>
+			6d9: R_X86_64_PC32	.rodata+0x8
+ 6dd:	48 89 85 e0 fa ff ff 	mov    %rax,-0x520(%rbp)
+ 6e4:	48 c7 85 d8 fa ff ff 	movq   $0x8,-0x528(%rbp)
+ 6eb:	08 00 00 00 
+ 6ef:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 6f6 <MAIN__+0x6f6>
+			6f2: R_X86_64_PC32	.rodata+0x1c
+ 6f6:	48 89 85 e8 fa ff ff 	mov    %rax,-0x518(%rbp)
+ 6fd:	48 c7 85 f0 fa ff ff 	movq   $0x3,-0x510(%rbp)
+ 704:	03 00 00 00 
+ 708:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 70f <MAIN__+0x70f>
+			70b: R_X86_64_PC32	.rodata+0x1f
+ 70f:	48 89 85 28 fb ff ff 	mov    %rax,-0x4d8(%rbp)
+ 716:	48 c7 85 30 fb ff ff 	movq   $0x6,-0x4d0(%rbp)
+ 71d:	06 00 00 00 
+ 721:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 728 <MAIN__+0x728>
+			724: R_X86_64_PC32	.rodata+0x25
+ 728:	48 89 85 40 fb ff ff 	mov    %rax,-0x4c0(%rbp)
+ 72f:	48 c7 85 38 fb ff ff 	movq   $0x5,-0x4c8(%rbp)
+ 736:	05 00 00 00 
+ 73a:	c7 85 d0 fb ff ff 00 	movl   $0x0,-0x430(%rbp)
+ 741:	00 00 00 
+ 744:	c7 85 a0 fa ff ff 00 	movl   $0x1006300,-0x560(%rbp)
+ 74b:	63 00 01 
+ 74e:	c7 85 a4 fa ff ff 09 	movl   $0x9,-0x55c(%rbp)
+ 755:	00 00 00 
+ 758:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 75f:	48 89 c7             	mov    %rax,%rdi
+ 762:	e8 00 00 00 00       	callq  767 <MAIN__+0x767>
+			763: R_X86_64_PLT32	_gfortran_st_open-0x4
+ 767:	e9 90 00 00 00       	jmpq   7fc <MAIN__+0x7fc>
+        else
+            open(9, file = 'data.txt', status = "new", action = 'write')
+ 76c:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 773 <MAIN__+0x773>
+			76f: R_X86_64_PC32	.rodata-0x4
+ 773:	48 89 85 a8 fa ff ff 	mov    %rax,-0x558(%rbp)
+ 77a:	c7 85 b0 fa ff ff 2f 	movl   $0x2f,-0x550(%rbp)
+ 781:	00 00 00 
+ 784:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 78b <MAIN__+0x78b>
+			787: R_X86_64_PC32	.rodata+0x8
+ 78b:	48 89 85 e0 fa ff ff 	mov    %rax,-0x520(%rbp)
+ 792:	48 c7 85 d8 fa ff ff 	movq   $0x8,-0x528(%rbp)
+ 799:	08 00 00 00 
+ 79d:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 7a4 <MAIN__+0x7a4>
+			7a0: R_X86_64_PC32	.rodata+0x2a
+ 7a4:	48 89 85 e8 fa ff ff 	mov    %rax,-0x518(%rbp)
+ 7ab:	48 c7 85 f0 fa ff ff 	movq   $0x3,-0x510(%rbp)
+ 7b2:	03 00 00 00 
+ 7b6:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 7bd <MAIN__+0x7bd>
+			7b9: R_X86_64_PC32	.rodata+0x25
+ 7bd:	48 89 85 40 fb ff ff 	mov    %rax,-0x4c0(%rbp)
+ 7c4:	48 c7 85 38 fb ff ff 	movq   $0x5,-0x4c8(%rbp)
+ 7cb:	05 00 00 00 
+ 7cf:	c7 85 d0 fb ff ff 00 	movl   $0x0,-0x430(%rbp)
+ 7d6:	00 00 00 
+ 7d9:	c7 85 a0 fa ff ff 00 	movl   $0x1004300,-0x560(%rbp)
+ 7e0:	43 00 01 
+ 7e3:	c7 85 a4 fa ff ff 09 	movl   $0x9,-0x55c(%rbp)
+ 7ea:	00 00 00 
+ 7ed:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 7f4:	48 89 c7             	mov    %rax,%rdi
+ 7f7:	e8 00 00 00 00       	callq  7fc <MAIN__+0x7fc>
+			7f8: R_X86_64_PLT32	_gfortran_st_open-0x4
+        end if
+        
+        write (9, *) n, h
+ 7fc:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 803 <MAIN__+0x803>
+			7ff: R_X86_64_PC32	.rodata-0x4
+ 803:	48 89 85 a8 fa ff ff 	mov    %rax,-0x558(%rbp)
+ 80a:	c7 85 b0 fa ff ff 32 	movl   $0x32,-0x550(%rbp)
+ 811:	00 00 00 
+ 814:	c7 85 a0 fa ff ff 80 	movl   $0x80,-0x560(%rbp)
+ 81b:	00 00 00 
+ 81e:	c7 85 a4 fa ff ff 09 	movl   $0x9,-0x55c(%rbp)
+ 825:	00 00 00 
+ 828:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 82f:	48 89 c7             	mov    %rax,%rdi
+ 832:	e8 00 00 00 00       	callq  837 <MAIN__+0x837>
+			833: R_X86_64_PLT32	_gfortran_st_write-0x4
+ 837:	48 8d 8d 5c fe ff ff 	lea    -0x1a4(%rbp),%rcx
+ 83e:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 845:	ba 04 00 00 00       	mov    $0x4,%edx
+ 84a:	48 89 ce             	mov    %rcx,%rsi
+ 84d:	48 89 c7             	mov    %rax,%rdi
+ 850:	e8 00 00 00 00       	callq  855 <MAIN__+0x855>
+			851: R_X86_64_PLT32	_gfortran_transfer_integer_write-0x4
+ 855:	48 c7 85 30 f9 ff ff 	movq   $0x4,-0x6d0(%rbp)
+ 85c:	04 00 00 00 
+ 860:	48 c7 85 20 f9 ff ff 	movq   $0x0,-0x6e0(%rbp)
+ 867:	00 00 00 00 
+ 86b:	48 c7 85 28 f9 ff ff 	movq   $0x0,-0x6d8(%rbp)
+ 872:	00 00 00 00 
+ 876:	48 c7 85 20 f9 ff ff 	movq   $0x4,-0x6e0(%rbp)
+ 87d:	04 00 00 00 
+ 881:	c6 85 2c f9 ff ff 01 	movb   $0x1,-0x6d4(%rbp)
+ 888:	c6 85 2d f9 ff ff 03 	movb   $0x3,-0x6d3(%rbp)
+ 88f:	48 c7 85 40 f9 ff ff 	movq   $0x1,-0x6c0(%rbp)
+ 896:	01 00 00 00 
+ 89a:	48 c7 85 48 f9 ff ff 	movq   $0x64,-0x6b8(%rbp)
+ 8a1:	64 00 00 00 
+ 8a5:	48 c7 85 38 f9 ff ff 	movq   $0x1,-0x6c8(%rbp)
+ 8ac:	01 00 00 00 
+ 8b0:	48 8d 85 60 fe ff ff 	lea    -0x1a0(%rbp),%rax
+ 8b7:	48 89 85 10 f9 ff ff 	mov    %rax,-0x6f0(%rbp)
+ 8be:	48 c7 85 18 f9 ff ff 	movq   $0xffffffffffffffff,-0x6e8(%rbp)
+ 8c5:	ff ff ff ff 
+ 8c9:	48 8d b5 10 f9 ff ff 	lea    -0x6f0(%rbp),%rsi
+ 8d0:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 8d7:	b9 00 00 00 00       	mov    $0x0,%ecx
+ 8dc:	ba 04 00 00 00       	mov    $0x4,%edx
+ 8e1:	48 89 c7             	mov    %rax,%rdi
+ 8e4:	e8 00 00 00 00       	callq  8e9 <MAIN__+0x8e9>
+			8e5: R_X86_64_PLT32	_gfortran_transfer_array_write-0x4
+ 8e9:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 8f0:	48 89 c7             	mov    %rax,%rdi
+ 8f3:	e8 00 00 00 00       	callq  8f8 <MAIN__+0x8f8>
+			8f4: R_X86_64_PLT32	_gfortran_st_write_done-0x4
+    time_loop: do n = 1, num_time_steps
+ 8f8:	8b 85 5c fe ff ff    	mov    -0x1a4(%rbp),%eax
+ 8fe:	83 c0 01             	add    $0x1,%eax
+ 901:	89 85 5c fe ff ff    	mov    %eax,-0x1a4(%rbp)
+ 907:	e9 43 f9 ff ff       	jmpq   24f <MAIN__+0x24f>
+        write (9, *) n, h
+ 90c:	90                   	nop
+
+    end do time_loop
+     
+    close(9)
+ 90d:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 914 <MAIN__+0x914>
+			910: R_X86_64_PC32	.rodata-0x4
+ 914:	48 89 85 a8 fa ff ff 	mov    %rax,-0x558(%rbp)
+ 91b:	c7 85 b0 fa ff ff 36 	movl   $0x36,-0x550(%rbp)
+ 922:	00 00 00 
+ 925:	c7 85 a0 fa ff ff 00 	movl   $0x0,-0x560(%rbp)
+ 92c:	00 00 00 
+ 92f:	c7 85 a4 fa ff ff 09 	movl   $0x9,-0x55c(%rbp)
+ 936:	00 00 00 
+ 939:	48 8d 85 a0 fa ff ff 	lea    -0x560(%rbp),%rax
+ 940:	48 89 c7             	mov    %rax,%rdi
+ 943:	e8 00 00 00 00       	callq  948 <MAIN__+0x948>
+			944: R_X86_64_PLT32	_gfortran_st_close-0x4
+    
+end program tsunami
+ 948:	90                   	nop
+ 949:	c9                   	leaveq 
+ 94a:	c3                   	retq   
+
+000000000000094b <main>:
+    use mod_diff, only        : diff => diff_centered
+ 94b:	55                   	push   %rbp
+ 94c:	48 89 e5             	mov    %rsp,%rbp
+ 94f:	48 83 ec 10          	sub    $0x10,%rsp
+ 953:	89 7d fc             	mov    %edi,-0x4(%rbp)
+ 956:	48 89 75 f0          	mov    %rsi,-0x10(%rbp)
+ 95a:	48 8b 55 f0          	mov    -0x10(%rbp),%rdx
+ 95e:	8b 45 fc             	mov    -0x4(%rbp),%eax
+ 961:	48 89 d6             	mov    %rdx,%rsi
+ 964:	89 c7                	mov    %eax,%edi
+ 966:	e8 00 00 00 00       	callq  96b <main+0x20>
+			967: R_X86_64_PLT32	_gfortran_set_args-0x4
+ 96b:	48 8d 35 00 00 00 00 	lea    0x0(%rip),%rsi        # 972 <main+0x27>
+			96e: R_X86_64_PC32	.rodata+0x3c
+ 972:	bf 07 00 00 00       	mov    $0x7,%edi
+ 977:	e8 00 00 00 00       	callq  97c <main+0x31>
+			978: R_X86_64_PLT32	_gfortran_set_options-0x4
+ 97c:	e8 7f f6 ff ff       	callq  0 <MAIN__>
+ 981:	b8 00 00 00 00       	mov    $0x0,%eax
+ 986:	c9                   	leaveq 
+ 987:	c3                   	retq   
+
+Disassembly of section .rodata:
+
+0000000000000000 <options.27.4024-0x40>:
+   0:	74 73                	je     75 <options.27.4024+0x35>
+   2:	75 6e                	jne    72 <options.27.4024+0x32>
+   4:	61                   	(bad)  
+   5:	6d                   	insl   (%dx),%es:(%rdi)
+   6:	69 2e 66 39 35 00    	imul   $0x353966,(%rsi),%ebp
+   c:	64 61                	fs (bad) 
+   e:	74 61                	je     71 <options.27.4024+0x31>
+  10:	2e 74 78             	je,pn  8b <options.27.4024+0x4b>
+  13:	74 0a                	je     1f <options.27.4024-0x21>
+  15:	d7                   	xlat   %ds:(%rbx)
+  16:	a3 3c 19 00 00 00 00 	movabs %eax,0x193c
+  1d:	00 00 
+  1f:	00 6f 6c             	add    %ch,0x6c(%rdi)
+  22:	64 61                	fs (bad) 
+  24:	70 70                	jo     96 <options.27.4024+0x56>
+  26:	65 6e                	outsb  %gs:(%rsi),(%dx)
+  28:	64 77 72             	fs ja  9d <options.27.4024+0x5d>
+  2b:	69 74 65 6e 65 77 00 	imul   $0x7765,0x6e(%rbp,%riz,2),%esi
+  32:	00 
+	...
+
+0000000000000040 <options.27.4024>:
+  40:	44 08 00             	or     %r8b,(%rax)
+  43:	00 ff                	add    %bh,%bh
+  45:	0f 00 00             	sldt   (%rax)
+  48:	00 00                	add    %al,(%rax)
+  4a:	00 00                	add    %al,(%rax)
+  4c:	01 00                	add    %eax,(%rax)
+  4e:	00 00                	add    %al,(%rax)
+  50:	01 00                	add    %eax,(%rax)
+  52:	00 00                	add    %al,(%rax)
+  54:	00 00                	add    %al,(%rax)
+  56:	00 00                	add    %al,(%rax)
+  58:	1f                   	(bad)  
+  59:	00 00                	add    %al,(%rax)
+  5b:	00 cd                	add    %cl,%ch
+  5d:	cc                   	int3   
+  5e:	1c 41                	sbb    $0x41,%al
+  60:	0a d7                	or     %bh,%dl
+  62:	a3                   	.byte 0xa3
+  63:	3c 00                	cmp    $0x0,%al
+  65:	00 20                	add    %ah,(%rax)
+  67:	41                   	rex.B
+
+Disassembly of section .debug_info:
+
+0000000000000000 <.debug_info>:
+program tsunami
+   0:	a4                   	movsb  %ds:(%rsi),%es:(%rdi)
+   1:	02 00                	add    (%rax),%al
+   3:	00 04 00             	add    %al,(%rax,%rax,1)
+   6:	00 00                	add    %al,(%rax)
+			6: R_X86_64_32	.debug_abbrev
+   8:	00 00                	add    %al,(%rax)
+   a:	08 01                	or     %al,(%rcx)
+    open(9, file = 'data.txt')
+   c:	00 00                	add    %al,(%rax)
+			c: R_X86_64_32	.debug_str+0x9b
+   e:	00 00                	add    %al,(%rax)
+  10:	0e                   	(bad)  
+  11:	02 00                	add    (%rax),%al
+			12: R_X86_64_32	.debug_str+0x218
+	...
+			16: R_X86_64_32	.debug_str+0x1a1
+			1a: R_X86_64_64	.text
+  1f:	00 00                	add    %al,(%rax)
+  21:	00 88 09 00 00 00    	add    %cl,0x9(%rax)
+	...
+			2a: R_X86_64_32	.debug_line
+			2e: R_X86_64_32	.debug_macro
+  2f:	00 00                	add    %al,(%rax)
+  31:	00 02                	add    %al,(%rdx)
+  33:	08 05 00 00 00 00    	or     %al,0x0(%rip)        # 39 <.debug_info+0x39>
+			35: R_X86_64_32	.debug_str+0x224
+  39:	03 08                	add    (%rax),%ecx
+  3b:	04 39                	add    $0x39,%al
+  3d:	00 00                	add    %al,(%rax)
+  3f:	00 05 00 00 00 00    	add    %al,0x0(%rip)        # 45 <.debug_info+0x45>
+			41: R_X86_64_32	.debug_str+0xc
+  45:	01 01                	add    %eax,(%rcx)
+  47:	02 00                	add    (%rax),%al
+			48: R_X86_64_64	.text
+  49:	00 00                	add    %al,(%rax)
+  4b:	00 00                	add    %al,(%rax)
+  4d:	00 00                	add    %al,(%rax)
+  4f:	00 4b 09             	add    %cl,0x9(%rbx)
+  52:	00 00                	add    %al,(%rax)
+  54:	00 00                	add    %al,(%rax)
+  56:	00 00                	add    %al,(%rax)
+  58:	01 9c 4e 01 00 00 06 	add    %ebx,0x6000001(%rsi,%rcx,2)
+  5f:	01 05 57 01 00 00    	add    %eax,0x157(%rip)        # 1bc <.debug_info+0x1bc>
+  65:	07                   	(bad)  
+  66:	01 04 00             	add    %eax,(%rax,%rax,1)
+			68: R_X86_64_32	.debug_str+0x246
+    call set_gaussian(h, icenter, decay)
+  69:	00 00                	add    %al,(%rax)
+  6b:	00 d9                	add    %bl,%cl
+  6d:	01 00                	add    %eax,(%rax)
+  6f:	00 08                	add    %cl,(%rax)
+  71:	00 00                	add    %al,(%rax)
+			71: R_X86_64_32	.debug_str+0x189
+  73:	00 00                	add    %al,(%rax)
+  75:	01 13                	add    %edx,(%rbx)
+  77:	a9 01 00 00 04       	test   $0x4000001,%eax
+  7c:	0a d7                	or     %bh,%dl
+  7e:	a3 3c 09 64 74 00 01 	movabs %eax,0xa90d01007464093c
+  85:	0d a9 
+  87:	01 00                	add    %eax,(%rax)
+  89:	00 04 0a             	add    %al,(%rdx,%rcx,1)
+  8c:	d7                   	xlat   %ds:(%rbx)
+  8d:	a3 3c 09 64 78 00 01 	movabs %eax,0xa90d01007864093c
+  94:	0d a9 
+  96:	01 00                	add    %eax,(%rax)
+  98:	00 04 00             	add    %al,(%rax,%rax,1)
+  9b:	00 80 3f 09 67 00    	add    %al,0x67093f(%rax)
+  a1:	01 0d a9 01 00 00    	add    %ecx,0x1a9(%rip)        # 250 <.debug_info+0x250>
+  a7:	04 cd                	add    $0xcd,%al
+  a9:	cc                   	int3   
+  aa:	1c 41                	sbb    $0x41,%al
+  ac:	0a 00                	or     (%rax),%al
+			ad: R_X86_64_32	.debug_str+0x6b
+  ae:	00 00                	add    %al,(%rax)
+  b0:	00 01                	add    %al,(%rcx)
+  b2:	0b c0                	or     %eax,%eax
+  b4:	01 00                	add    %eax,(%rax)
+  b6:	00 64 08 00          	add    %ah,0x0(%rax,%rcx,1)
+			b9: R_X86_64_32	.debug_str+0x240
+  ba:	00 00                	add    %al,(%rax)
+  bc:	00 01                	add    %al,(%rcx)
+  be:	0e                   	(bad)  
+  bf:	a9 01 00 00 04       	test   $0x4000001,%eax
+  c4:	00 00                	add    %al,(%rax)
+  c6:	20 41 0a             	and    %al,0xa(%rcx)
+  c9:	00 00                	add    %al,(%rax)
+			c9: R_X86_64_32	.debug_str+0x45
+  cb:	00 00                	add    %al,(%rax)
+  cd:	01 12                	add    %edx,(%rdx)
+  cf:	c0 01 00             	rolb   $0x0,(%rcx)
+  d2:	00 19                	add    %bl,(%rcx)
+  d4:	0b 00                	or     (%rax),%eax
+			d5: R_X86_64_32	.debug_str+0x14
+  d6:	00 00                	add    %al,(%rax)
+  d8:	00 01                	add    %al,(%rcx)
+  da:	0c c0                	or     $0xc0,%al
+  dc:	01 00                	add    %eax,(%rax)
+  de:	00 88 13 0c 00 00    	add    %cl,0xc13(%rax)
+			e2: R_X86_64_32	.debug_str
+  e4:	00 00                	add    %al,(%rax)
+  e6:	01 15 93 02 00 00    	add    %edx,0x293(%rip)        # 37f <options.27.4024+0x33f>
+  ec:	02 91 6c 0d 68 00    	add    0x680d6c(%rcx),%dl
+  f2:	01 10                	add    %edx,(%rax)
+  f4:	9a                   	(bad)  
+  f5:	02 00                	add    (%rax),%al
+  f7:	00 03                	add    %al,(%rbx)
+  f9:	91                   	xchg   %eax,%ecx
+    u = 0
+  fa:	d0 7c 0d 6e          	sarb   0x6e(%rbp,%rcx,1)
+  fe:	00 01                	add    %al,(%rcx)
+ 100:	09 b9 01 00 00 03    	or     %edi,0x3000001(%rcx)
+ 106:	91                   	xchg   %eax,%ecx
+ 107:	cc                   	int3   
+ 108:	7c 0d                	jl     117 <.debug_info+0x117>
+ 10a:	75 00                	jne    10c <.debug_info+0x10c>
+ 10c:	01 10                	add    %edx,(%rax)
+ 10e:	9a                   	(bad)  
+ 10f:	02 00                	add    (%rax),%al
+    write (9, *) 0, h
+ 111:	00 03                	add    %al,(%rbx)
+ 113:	91                   	xchg   %eax,%ecx
+ 114:	b0 79                	mov    $0x79,%al
+ 116:	0e                   	(bad)  
+	...
+			117: R_X86_64_64	.text+0x69
+ 11f:	91                   	xchg   %eax,%ecx
+ 120:	00 00                	add    %al,(%rax)
+ 122:	00 00                	add    %al,(%rax)
+ 124:	00 00                	add    %al,(%rax)
+ 126:	00 36                	add    %dh,(%rsi)
+ 128:	01 00                	add    %eax,(%rax)
+ 12a:	00 0f                	add    %cl,(%rdi)
+ 12c:	c0 01 00             	rolb   $0x0,(%rcx)
+ 12f:	00 0f                	add    %cl,(%rdi)
+ 131:	a9 01 00 00 00       	test   $0x1,%eax
+ 136:	10 00                	adc    %al,(%rax)
+			137: R_X86_64_64	.text+0x14c
+ 138:	00 00                	add    %al,(%rax)
+ 13a:	00 00                	add    %al,(%rax)
+ 13c:	00 00                	add    %al,(%rax)
+ 13e:	00 1b                	add    %bl,(%rbx)
+ 140:	00 00                	add    %al,(%rax)
+ 142:	00 00                	add    %al,(%rax)
+ 144:	00 00                	add    %al,(%rax)
+ 146:	00 0f                	add    %cl,(%rdi)
+ 148:	c0 01 00             	rolb   $0x0,(%rcx)
+ 14b:	00 00                	add    %al,(%rax)
+ 14d:	00 11                	add    %dl,(%rcx)
+ 14f:	00 00                	add    %al,(%rax)
+			14f: R_X86_64_32	.debug_str+0x234
+ 151:	00 00                	add    %al,(%rax)
+ 153:	73 01                	jae    156 <.debug_info+0x156>
+ 155:	00 00                	add    %al,(%rax)
+ 157:	12 00                	adc    (%rax),%al
+			158: R_X86_64_32	.debug_str+0x85
+ 159:	00 00                	add    %al,(%rax)
+ 15b:	00 01                	add    %al,(%rcx)
+ 15d:	1d 00 00 00 00       	sbb    $0x0,%eax
+			15e: R_X86_64_32	.debug_str+0x1f9
+ 162:	13 79 01             	adc    0x1(%rcx),%edi
+ 165:	00 00                	add    %al,(%rax)
+ 167:	13 b4 01 00 00 13 cb 	adc    -0x34ed0000(%rcx,%rax,1),%esi
+ 16e:	01 00                	add    %eax,(%rax)
+ 170:	00 00                	add    %al,(%rax)
+ 172:	00 14 08             	add    %dl,(%rax,%rcx,1)
+ 175:	7e 01                	jle    178 <.debug_info+0x178>
+ 177:	00 00                	add    %al,(%rax)
+ 179:	04 73                	add    $0x73,%al
+ 17b:	01 00                	add    %eax,(%rax)
+ 17d:	00 15 02 97 06 a2    	add    %dl,-0x5df968fe(%rip)        # ffffffffa2069885 <main+0xffffffffa2068f3a>
+ 183:	01 00                	add    %eax,(%rax)
+ 185:	00 a2 01 00 00 16    	add    %ah,0x16000001(%rdx)
+ 18b:	0b 31                	or     (%rcx),%esi
+ 18d:	97                   	xchg   %eax,%edi
+ 18e:	23 38                	and    (%rax),%edi
+ 190:	06                   	(bad)  
+ 191:	97                   	xchg   %eax,%edi
+ 192:	23 30                	and    (%rax),%esi
+ 194:	06                   	(bad)  
+ 195:	1c 22                	sbb    $0x22,%al
+ 197:	09 97 23 28 06 97    	or     %edx,-0x68f9d7dd(%rdi)
+ 19d:	23 20                	and    (%rax),%esp
+ 19f:	06                   	(bad)  
+ 1a0:	1e                   	(bad)  
+ 1a1:	00 02                	add    %al,(%rdx)
+ 1a3:	04 04                	add    $0x4,%al
+ 1a5:	00 00                	add    %al,(%rax)
+			1a5: R_X86_64_32	.debug_str+0x24b
+ 1a7:	00 00                	add    %al,(%rax)
+ 1a9:	17                   	(bad)  
+ 1aa:	a2 01 00 00 14 08 b9 	movabs %al,0x1b90814000001
+ 1b1:	01 00 
+ 1b3:	00 04 ae             	add    %al,(%rsi,%rbp,4)
+ 1b6:	01 00                	add    %eax,(%rax)
+ 1b8:	00 02                	add    %al,(%rdx)
+ 1ba:	04 05                	add    $0x5,%al
+ 1bc:	00 00                	add    %al,(%rax)
+			1bc: R_X86_64_32	.debug_str+0x75
+ 1be:	00 00                	add    %al,(%rax)
+ 1c0:	17                   	(bad)  
+ 1c1:	b9 01 00 00 14       	mov    $0x14000001,%ecx
+ 1c6:	08 a2 01 00 00 04    	or     %ah,0x4000001(%rdx)
+ 1cc:	c5 01 00             	(bad)
+ 1cf:	00 11                	add    %dl,(%rcx)
+ 1d1:	00 00                	add    %al,(%rax)
+			1d1: R_X86_64_32	.debug_str+0x92
+ 1d3:	00 00                	add    %al,(%rax)
+ 1d5:	f0 01 00             	lock add %eax,(%rax)
+ 1d8:	00 12                	add    %dl,(%rdx)
+ 1da:	00 00                	add    %al,(%rax)
+			1da: R_X86_64_32	.debug_str+0x5d
+ 1dc:	00 00                	add    %al,(%rax)
+ 1de:	01 26                	add    %esp,(%rsi)
+ 1e0:	00 00                	add    %al,(%rax)
+			1e0: R_X86_64_32	.debug_str+0x28
+ 1e2:	00 00                	add    %al,(%rax)
+ 1e4:	13 f0                	adc    %eax,%esi
+ 1e6:	01 00                	add    %eax,(%rax)
+ 1e8:	00 13                	add    %dl,(%rbx)
+ 1ea:	1e                   	(bad)  
+ 1eb:	02 00                	add    (%rax),%al
+ 1ed:	00 00                	add    %al,(%rax)
+ 1ef:	00 14 08             	add    %dl,(%rax,%rcx,1)
+ 1f2:	f6 01 00             	testb  $0x0,(%rcx)
+ 1f5:	00 15 02 97 06 a2    	add    %dl,-0x5df968fe(%rip)        # ffffffffa20698fd <main+0xffffffffa2068fb2>
+ 1fb:	01 00                	add    %eax,(%rax)
+ 1fd:	00 18                	add    %bl,(%rax)
+ 1ff:	02 00                	add    (%rax),%al
+ 201:	00 18                	add    %bl,(%rax)
+ 203:	04 97                	add    $0x97,%al
+ 205:	23 30                	and    (%rax),%esi
+ 207:	06                   	(bad)  
+ 208:	04 97                	add    $0x97,%al
+    close(9)
+ 20a:	23 38                	and    (%rax),%edi
+ 20c:	06                   	(bad)  
+ 20d:	09 97 23 28 06 97    	or     %edx,-0x68f9d7dd(%rdi)
+ 213:	23 20                	and    (%rax),%esp
+ 215:	06                   	(bad)  
+ 216:	1e                   	(bad)  
+ 217:	00 14 08             	add    %dl,(%rax,%rcx,1)
+ 21a:	23 02                	and    (%rdx),%eax
+ 21c:	00 00                	add    %al,(%rax)
+ 21e:	04 18                	add    $0x18,%al
+ 220:	02 00                	add    (%rax),%al
+ 222:	00 15 02 97 06 a2    	add    %dl,-0x5df968fe(%rip)        # ffffffffa206992a <main+0xffffffffa2068fdf>
+ 228:	01 00                	add    %eax,(%rax)
+ 22a:	00 47 02             	add    %al,0x2(%rdi)
+ 22d:	00 00                	add    %al,(%rax)
+ 22f:	16                   	(bad)  
+ 230:	0b 31                	or     (%rcx),%esi
+ 232:	97                   	xchg   %eax,%edi
+ 233:	23 38                	and    (%rax),%edi
+ 235:	06                   	(bad)  
+ 236:	97                   	xchg   %eax,%edi
+ 237:	23 30                	and    (%rax),%esi
+ 239:	06                   	(bad)  
+ 23a:	1c 22                	sbb    $0x22,%al
+ 23c:	09 97 23 28 06 97    	or     %edx,-0x68f9d7dd(%rdi)
+ 242:	23 20                	and    (%rax),%esp
+ 244:	06                   	(bad)  
+    time_loop: do n = 1, num_time_steps
+ 245:	1e                   	(bad)  
+ 246:	00 19                	add    %bl,(%rcx)
+ 248:	00 00                	add    %al,(%rax)
+			248: R_X86_64_32	.debug_str+0x23
+ 24a:	00 00                	add    %al,(%rax)
+ 24c:	01 04 b9             	add    %eax,(%rcx,%rdi,4)
+ 24f:	01 00                	add    %eax,(%rax)
+	...
+			252: R_X86_64_64	.text+0x94b
+ 259:	00 3d 00 00 00 00    	add    %bh,0x0(%rip)        # 25f <.debug_info+0x25f>
+ 25f:	00 00                	add    %al,(%rax)
+ 261:	00 01                	add    %al,(%rcx)
+ 263:	9c                   	pushfq 
+ 264:	86 02                	xchg   %al,(%rdx)
+ 266:	00 00                	add    %al,(%rax)
+        u = u - (u * diff(u) + g * diff(h)) / dx * dt
+ 268:	1a 00                	sbb    (%rax),%al
+			269: R_X86_64_32	.debug_str+0x1f4
+ 26a:	00 00                	add    %al,(%rax)
+ 26c:	00 01                	add    %al,(%rcx)
+ 26e:	04 c0                	add    $0xc0,%al
+ 270:	01 00                	add    %eax,(%rax)
+ 272:	00 02                	add    %al,(%rdx)
+ 274:	91                   	xchg   %eax,%ecx
+ 275:	6c                   	insb   (%dx),%es:(%rdi)
+ 276:	1a 00                	sbb    (%rax),%al
+			277: R_X86_64_32	.debug_str+0x258
+ 278:	00 00                	add    %al,(%rax)
+ 27a:	00 01                	add    %al,(%rcx)
+ 27c:	04 86                	add    $0x86,%al
+ 27e:	02 00                	add    (%rax),%al
+ 280:	00 03                	add    %al,(%rbx)
+ 282:	91                   	xchg   %eax,%ecx
+ 283:	60                   	(bad)  
+ 284:	06                   	(bad)  
+ 285:	00 1b                	add    %bl,(%rbx)
+ 287:	08 8c 02 00 00 02 01 	or     %cl,0x1020000(%rdx,%rax,1)
+ 28e:	08 00                	or     %al,(%rax)
+			28f: R_X86_64_32	.debug_str+0x18f
+ 290:	00 00                	add    %al,(%rax)
+ 292:	00 02                	add    %al,(%rdx)
+ 294:	04 02                	add    $0x2,%al
+ 296:	00 00                	add    %al,(%rax)
+			296: R_X86_64_32	.debug_str+0x4d
+ 298:	00 00                	add    %al,(%rax)
+ 29a:	1c a2                	sbb    $0xa2,%al
+ 29c:	01 00                	add    %eax,(%rax)
+ 29e:	00 1d 32 00 00 00    	add    %bl,0x32(%rip)        # 2d6 <options.27.4024+0x296>
+ 2a4:	e4 00                	in     $0x0,%al
+	...
+
+Disassembly of section .debug_abbrev:
+
+0000000000000000 <.debug_abbrev>:
+program tsunami
+   0:	01 11                	add    %edx,(%rcx)
+   2:	01 25 0e 13 0b 42    	add    %esp,0x420b130e(%rip)        # 420b1316 <main+0x420b09cb>
+   8:	0b 03                	or     (%rbx),%eax
+   a:	0e                   	(bad)  
+    open(9, file = 'data.txt')
+   b:	1b 0e                	sbb    (%rsi),%ecx
+   d:	11 01                	adc    %eax,(%rcx)
+   f:	12 07                	adc    (%rdi),%al
+  11:	10 17                	adc    %dl,(%rdi)
+  13:	99                   	cltd   
+  14:	42 17                	rex.X (bad) 
+  16:	00 00                	add    %al,(%rax)
+  18:	02 24 00             	add    (%rax,%rax,1),%ah
+  1b:	0b 0b                	or     (%rbx),%ecx
+  1d:	3e 0b 03             	or     %ds:(%rbx),%eax
+  20:	0e                   	(bad)  
+  21:	00 00                	add    %al,(%rax)
+  23:	03 0f                	add    (%rdi),%ecx
+  25:	00 0b                	add    %cl,(%rbx)
+  27:	0b 00                	or     (%rax),%eax
+  29:	00 04 37             	add    %al,(%rdi,%rsi,1)
+  2c:	00 49 13             	add    %cl,0x13(%rcx)
+  2f:	00 00                	add    %al,(%rax)
+  31:	05 2e 01 03 0e       	add    $0xe03012e,%eax
+  36:	3a 0b                	cmp    (%rbx),%cl
+  38:	3b 0b                	cmp    (%rbx),%ecx
+  3a:	6a 19                	pushq  $0x19
+  3c:	36 0b 11             	or     %ss:(%rcx),%edx
+  3f:	01 12                	add    %edx,(%rdx)
+  41:	07                   	(bad)  
+  42:	40 18 96 42 19 01 13 	sbb    %dl,0x13011942(%rsi)
+  49:	00 00                	add    %al,(%rax)
+  4b:	06                   	(bad)  
+  4c:	08 00                	or     %al,(%rax)
+  4e:	3a 0b                	cmp    (%rbx),%cl
+  50:	3b 0b                	cmp    (%rbx),%ecx
+  52:	18 13                	sbb    %dl,(%rbx)
+  54:	00 00                	add    %al,(%rax)
+  56:	07                   	(bad)  
+  57:	08 00                	or     %al,(%rax)
+  59:	3a 0b                	cmp    (%rbx),%cl
+  5b:	3b 0b                	cmp    (%rbx),%ecx
+  5d:	03 0e                	add    (%rsi),%ecx
+  5f:	18 13                	sbb    %dl,(%rbx)
+  61:	00 00                	add    %al,(%rax)
+  63:	08 27                	or     %ah,(%rdi)
+  65:	00 03                	add    %al,(%rbx)
+  67:	0e                   	(bad)  
+  68:	3a 0b                	cmp    (%rbx),%cl
+    call set_gaussian(h, icenter, decay)
+  6a:	3b 0b                	cmp    (%rbx),%ecx
+  6c:	49 13 1c 0a          	adc    (%r10,%rcx,1),%rbx
+  70:	00 00                	add    %al,(%rax)
+  72:	09 27                	or     %esp,(%rdi)
+  74:	00 03                	add    %al,(%rbx)
+  76:	08 3a                	or     %bh,(%rdx)
+  78:	0b 3b                	or     (%rbx),%edi
+  7a:	0b 49 13             	or     0x13(%rcx),%ecx
+  7d:	1c 0a                	sbb    $0xa,%al
+  7f:	00 00                	add    %al,(%rax)
+  81:	0a 27                	or     (%rdi),%ah
+  83:	00 03                	add    %al,(%rbx)
+  85:	0e                   	(bad)  
+  86:	3a 0b                	cmp    (%rbx),%cl
+  88:	3b 0b                	cmp    (%rbx),%ecx
+  8a:	49 13 1c 0b          	adc    (%r11,%rcx,1),%rbx
+  8e:	00 00                	add    %al,(%rax)
+  90:	0b 27                	or     (%rdi),%esp
+  92:	00 03                	add    %al,(%rbx)
+  94:	0e                   	(bad)  
+  95:	3a 0b                	cmp    (%rbx),%cl
+  97:	3b 0b                	cmp    (%rbx),%ecx
+  99:	49 13 1c 05 00 00 0c 	adc    0x340c0000(,%rax,1),%rbx
+  a0:	34 
+  a1:	00 03                	add    %al,(%rbx)
+  a3:	0e                   	(bad)  
+  a4:	3a 0b                	cmp    (%rbx),%cl
+  a6:	3b 0b                	cmp    (%rbx),%ecx
+  a8:	49 13 02             	adc    (%r10),%rax
+  ab:	18 00                	sbb    %al,(%rax)
+  ad:	00 0d 34 00 03 08    	add    %cl,0x8030034(%rip)        # 80300e7 <main+0x802f79c>
+  b3:	3a 0b                	cmp    (%rbx),%cl
+  b5:	3b 0b                	cmp    (%rbx),%ecx
+  b7:	49 13 02             	adc    (%r10),%rax
+  ba:	18 00                	sbb    %al,(%rax)
+  bc:	00 0e                	add    %cl,(%rsi)
+  be:	0b 01                	or     (%rcx),%eax
+  c0:	11 01                	adc    %eax,(%rcx)
+  c2:	12 07                	adc    (%rdi),%al
+  c4:	01 13                	add    %edx,(%rbx)
+  c6:	00 00                	add    %al,(%rax)
+  c8:	0f 27                	(bad)  
+  ca:	00 49 13             	add    %cl,0x13(%rcx)
+  cd:	00 00                	add    %al,(%rax)
+  cf:	10 0b                	adc    %cl,(%rbx)
+  d1:	01 11                	add    %edx,(%rcx)
+  d3:	01 12                	add    %edx,(%rdx)
+  d5:	07                   	(bad)  
+  d6:	00 00                	add    %al,(%rax)
+  d8:	11 1e                	adc    %ebx,(%rsi)
+  da:	01 03                	add    %eax,(%rbx)
+  dc:	0e                   	(bad)  
+  dd:	3c 19                	cmp    $0x19,%al
+  df:	01 13                	add    %edx,(%rbx)
+  e1:	00 00                	add    %al,(%rax)
+  e3:	12 2e                	adc    (%rsi),%ch
+  e5:	01 3f                	add    %edi,(%rdi)
+  e7:	19 03                	sbb    %eax,(%rbx)
+  e9:	0e                   	(bad)  
+  ea:	3a 0b                	cmp    (%rbx),%cl
+  ec:	3b 0b                	cmp    (%rbx),%ecx
+  ee:	6e                   	outsb  %ds:(%rsi),(%dx)
+  ef:	0e                   	(bad)  
+  f0:	3c 19                	cmp    $0x19,%al
+  f2:	00 00                	add    %al,(%rax)
+  f4:	13 05 00 49 13 00    	adc    0x134900(%rip),%eax        # 1349fa <main+0x1340af>
+    u = 0
+  fa:	00 14 10             	add    %dl,(%rax,%rdx,1)
+  fd:	00 0b                	add    %cl,(%rbx)
+  ff:	0b 49 13             	or     0x13(%rcx),%ecx
+ 102:	00 00                	add    %al,(%rax)
+ 104:	15 01 01 50 18       	adc    $0x18500101,%eax
+ 109:	49 13 01             	adc    (%r9),%rax
+ 10c:	13 00                	adc    (%rax),%eax
+ 10e:	00 16                	add    %dl,(%rsi)
+ 110:	21 00                	and    %eax,(%rax)
+    write (9, *) 0, h
+ 112:	2f                   	(bad)  
+ 113:	18 51 18             	sbb    %dl,0x18(%rcx)
+ 116:	00 00                	add    %al,(%rax)
+ 118:	17                   	(bad)  
+ 119:	26 00 49 13          	add    %cl,%es:0x13(%rcx)
+ 11d:	00 00                	add    %al,(%rax)
+ 11f:	18 21                	sbb    %ah,(%rcx)
+ 121:	00 22                	add    %ah,(%rdx)
+ 123:	18 2f                	sbb    %ch,(%rdi)
+ 125:	18 51 18             	sbb    %dl,0x18(%rcx)
+ 128:	00 00                	add    %al,(%rax)
+ 12a:	19 2e                	sbb    %ebp,(%rsi)
+ 12c:	01 3f                	add    %edi,(%rdi)
+ 12e:	19 03                	sbb    %eax,(%rbx)
+ 130:	0e                   	(bad)  
+ 131:	3a 0b                	cmp    (%rbx),%cl
+ 133:	3b 0b                	cmp    (%rbx),%ecx
+ 135:	49 13 11             	adc    (%r9),%rdx
+ 138:	01 12                	add    %edx,(%rdx)
+ 13a:	07                   	(bad)  
+ 13b:	40 18 96 42 19 01 13 	sbb    %dl,0x13011942(%rsi)
+ 142:	00 00                	add    %al,(%rax)
+ 144:	1a 05 00 03 0e 3a    	sbb    0x3a0e0300(%rip),%al        # 3a0e044a <main+0x3a0dfaff>
+ 14a:	0b 3b                	or     (%rbx),%edi
+ 14c:	0b 49 13             	or     0x13(%rcx),%ecx
+ 14f:	02 18                	add    (%rax),%bl
+ 151:	00 00                	add    %al,(%rax)
+ 153:	1b 0f                	sbb    (%rdi),%ecx
+ 155:	00 0b                	add    %cl,(%rbx)
+ 157:	0b 49 13             	or     0x13(%rcx),%ecx
+ 15a:	00 00                	add    %al,(%rax)
+ 15c:	1c 01                	sbb    $0x1,%al
+ 15e:	01 49 13             	add    %ecx,0x13(%rcx)
+ 161:	00 00                	add    %al,(%rax)
+ 163:	1d 21 00 49 13       	sbb    $0x13490021,%eax
+ 168:	2f                   	(bad)  
+ 169:	0d                   	.byte 0xd
+ 16a:	00 00                	add    %al,(%rax)
+	...
+
+Disassembly of section .debug_aranges:
+
+0000000000000000 <.debug_aranges>:
+program tsunami
+   0:	2c 00                	sub    $0x0,%al
+   2:	00 00                	add    %al,(%rax)
+   4:	02 00                	add    (%rax),%al
+   6:	00 00                	add    %al,(%rax)
+			6: R_X86_64_32	.debug_info
+   8:	00 00                	add    %al,(%rax)
+   a:	08 00                	or     %al,(%rax)
+	...
+			10: R_X86_64_64	.text
+    open(9, file = 'data.txt')
+  18:	88 09                	mov    %cl,(%rcx)
+	...
+
+Disassembly of section .debug_macro:
+
+0000000000000000 <.debug_macro>:
+program tsunami
+   0:	04 00                	add    $0x0,%al
+   2:	02 00                	add    (%rax),%al
+			3: R_X86_64_32	.debug_line
+   4:	00 00                	add    %al,(%rax)
+   6:	00 03                	add    %al,(%rbx)
+   8:	00 01                	add    %al,(%rcx)
+   a:	03 00                	add    (%rax),%eax
+    open(9, file = 'data.txt')
+   c:	02 04 04             	add    (%rsp,%rax,1),%al
+	...
+
+Disassembly of section .debug_line:
+
+0000000000000000 <.debug_line>:
+program tsunami
+   0:	1d 01 00 00 03       	sbb    $0x3000001,%eax
+   5:	00 89 00 00 00 01    	add    %cl,0x1000000(%rcx)
+    open(9, file = 'data.txt')
+   b:	01 fb                	add    %edi,%ebx
+   d:	0e                   	(bad)  
+   e:	0d 00 01 01 01       	or     $0x1010100,%eax
+  13:	01 00                	add    %eax,(%rax)
+  15:	00 00                	add    %al,(%rax)
+  17:	01 00                	add    %eax,(%rax)
+  19:	00 01                	add    %al,(%rcx)
+  1b:	2f                   	(bad)  
+  1c:	75 73                	jne    91 <.debug_line+0x91>
+  1e:	72 2f                	jb     4f <.debug_line+0x4f>
+  20:	6c                   	insb   (%dx),%es:(%rdi)
+  21:	69 62 2f 67 63 63 2f 	imul   $0x2f636367,0x2f(%rdx),%esp
+  28:	78 38                	js     62 <.debug_line+0x62>
+  2a:	36 5f                	ss pop %rdi
+  2c:	36 34 2d             	ss xor $0x2d,%al
+  2f:	6c                   	insb   (%dx),%es:(%rdi)
+  30:	69 6e 75 78 2d 67 6e 	imul   $0x6e672d78,0x75(%rsi),%ebp
+  37:	75 2f                	jne    68 <.debug_line+0x68>
+  39:	39 2f                	cmp    %ebp,(%rdi)
+  3b:	2e 2e 2f             	cs cs (bad) 
+  3e:	2e 2e 2f             	cs cs (bad) 
+  41:	2e 2e 2f             	cs cs (bad) 
+  44:	2e 2e 2f             	cs cs (bad) 
+  47:	78 38                	js     81 <.debug_line+0x81>
+  49:	36 5f                	ss pop %rdi
+  4b:	36 34 2d             	ss xor $0x2d,%al
+  4e:	6c                   	insb   (%dx),%es:(%rdi)
+  4f:	69 6e 75 78 2d 67 6e 	imul   $0x6e672d78,0x75(%rsi),%ebp
+  56:	75 2f                	jne    87 <.debug_line+0x87>
+  58:	69 6e 63 6c 75 64 65 	imul   $0x6564756c,0x63(%rsi),%ebp
+  5f:	2f                   	(bad)  
+  60:	66 69 6e 63 6c 75    	imul   $0x756c,0x63(%rsi),%bp
+  66:	64 65 00 00          	fs add %al,%gs:(%rax)
+    call set_gaussian(h, icenter, decay)
+  6a:	74 73                	je     df <.debug_line+0xdf>
+  6c:	75 6e                	jne    dc <.debug_line+0xdc>
+  6e:	61                   	(bad)  
+  6f:	6d                   	insl   (%dx),%es:(%rdi)
+  70:	69 2e 66 39 35 00    	imul   $0x353966,(%rsi),%ebp
+  76:	00 00                	add    %al,(%rax)
+  78:	00 6d 61             	add    %ch,0x61(%rbp)
+  7b:	74 68                	je     e5 <.debug_line+0xe5>
+  7d:	2d 76 65 63 74       	sub    $0x74636576,%eax
+  82:	6f                   	outsl  %ds:(%rsi),(%dx)
+  83:	72 2d                	jb     b2 <.debug_line+0xb2>
+  85:	66 6f                	outsw  %ds:(%rsi),(%dx)
+  87:	72 74                	jb     fd <.debug_line+0xfd>
+  89:	72 61                	jb     ec <.debug_line+0xec>
+  8b:	6e                   	outsb  %ds:(%rsi),(%dx)
+  8c:	2e 68 00 01 00 00    	cs pushq $0x100
+  92:	00 00                	add    %al,(%rax)
+  94:	09 02                	or     %eax,(%rdx)
+	...
+			96: R_X86_64_64	.text
+  9e:	01 03                	add    %eax,(%rbx)
+  a0:	16                   	(bad)  
+  a1:	ac                   	lods   %ds:(%rsi),%al
+  a2:	02 5e 18             	add    0x18(%rsi),%bl
+  a5:	02 91 01 13 08 69    	add    0x69081301(%rcx),%dl
+  ab:	02 f9                	add    %cl,%bh
+  ad:	01 13                	add    %edx,(%rbx)
+  af:	02 3b                	add    (%rbx),%bh
+  b1:	14 00                	adc    $0x0,%al
+  b3:	02 04 01             	add    (%rcx,%rax,1),%al
+  b6:	06                   	(bad)  
+  b7:	9e                   	sahf   
+  b8:	06                   	(bad)  
+  b9:	08 84 00 02 04 03 06 	or     %al,0x6030402(%rax,%rax,1)
+  c0:	02 87 04 12 00 02    	add    0x2001204(%rdi),%al
+  c6:	04 02                	add    $0x2,%al
+  c8:	66 06                	data16 (bad) 
+  ca:	02 60 13             	add    0x13(%rax),%ah
+  cd:	00 02                	add    %al,(%rdx)
+  cf:	04 04                	add    $0x4,%al
+  d1:	06                   	(bad)  
+  d2:	02 79 12             	add    0x12(%rcx),%bh
+  d5:	00 02                	add    %al,(%rdx)
+  d7:	04 03                	add    $0x3,%al
+  d9:	66 00 02             	data16 add %al,(%rdx)
+  dc:	04 02                	add    $0x2,%al
+  de:	02 34 12             	add    (%rdx,%rdx,1),%dh
+  e1:	00 02                	add    %al,(%rdx)
+  e3:	04 07                	add    $0x7,%al
+  e5:	02 92 01 12 00 02    	add    0x2001201(%rdx),%dl
+  eb:	04 06                	add    $0x6,%al
+  ed:	66 06                	data16 (bad) 
+  ef:	02 34 16             	add    (%rsi,%rdx,1),%dh
+  f2:	02 5f 13             	add    0x13(%rdi),%bl
+  f5:	ad                   	lods   %ds:(%rsi),%eax
+  f6:	00 02                	add    %al,(%rdx)
+  f8:	04 02                	add    $0x2,%al
+    u = 0
+  fa:	02 ae 01 14 00 02    	add    0x2001401(%rsi),%ch
+ 100:	04 01                	add    $0x1,%al
+ 102:	02 90 01 15 00 02    	add    0x2001501(%rax),%dl
+ 108:	04 01                	add    $0x1,%al
+ 10a:	03 72 02             	add    0x2(%rdx),%esi
+ 10d:	fc                   	cld    
+ 10e:	01 01                	add    %eax,(%rcx)
+ 110:	03 0e                	add    (%rsi),%ecx
+    write (9, *) 0, h
+ 112:	08 3c 24             	or     %bh,(%rsp)
+ 115:	02 3b                	add    (%rbx),%bh
+ 117:	14 03                	adc    $0x3,%al
+ 119:	4c 3c e4             	rex.WR cmp $0xe4,%al
+ 11c:	02 2e                	add    (%rsi),%ch
+ 11e:	00 01                	add    %al,(%rcx)
+ 120:	01                   	.byte 0x1
+
+Disassembly of section .debug_str:
+
+0000000000000000 <.debug_str>:
+program tsunami
+   0:	66 69 6c 65 5f 65 78 	imul   $0x7865,0x5f(%rbp,%riz,2),%bp
+   7:	69 73 74 73 00 74 73 	imul   $0x73740073,0x74(%rbx),%esi
+    open(9, file = 'data.txt')
+   e:	75 6e                	jne    7e <.debug_str+0x7e>
+  10:	61                   	(bad)  
+  11:	6d                   	insl   (%dx),%es:(%rdi)
+  12:	69 00 6e 75 6d 5f    	imul   $0x5f6d756e,(%rax),%eax
+  18:	74 69                	je     83 <.debug_str+0x83>
+  1a:	6d                   	insl   (%dx),%es:(%rdi)
+  1b:	65 5f                	gs pop %rdi
+  1d:	73 74                	jae    93 <.debug_str+0x93>
+  1f:	65 70 73             	gs jo  95 <.debug_str+0x95>
+  22:	00 6d 61             	add    %ch,0x61(%rbp)
+  25:	69 6e 00 5f 5f 6d 6f 	imul   $0x6f6d5f5f,0x0(%rsi),%ebp
+  2c:	64 5f                	fs pop %rdi
+  2e:	64 69 66 66 5f 4d 4f 	imul   $0x444f4d5f,%fs:0x66(%rsi),%esp
+  35:	44 
+  36:	5f                   	pop    %rdi
+  37:	64 69 66 66 5f 63 65 	imul   $0x6e65635f,%fs:0x66(%rsi),%esp
+  3e:	6e 
+  3f:	74 65                	je     a6 <.debug_str+0xa6>
+  41:	72 65                	jb     a8 <.debug_str+0xa8>
+  43:	64 00 69 63          	add    %ch,%fs:0x63(%rcx)
+  47:	65 6e                	outsb  %gs:(%rsi),(%dx)
+  49:	74 65                	je     b0 <.debug_str+0xb0>
+  4b:	72 00                	jb     4d <.debug_str+0x4d>
+  4d:	6c                   	insb   (%dx),%es:(%rdi)
+  4e:	6f                   	outsl  %ds:(%rsi),(%dx)
+  4f:	67 69 63 61 6c 28 6b 	imul   $0x696b286c,0x61(%ebx),%esp
+  56:	69 
+  57:	6e                   	outsb  %ds:(%rsi),(%dx)
+  58:	64 3d 34 29 00 64    	fs cmp $0x64002934,%eax
+  5e:	69 66 66 5f 63 65 6e 	imul   $0x6e65635f,0x66(%rsi),%esp
+  65:	74 65                	je     cc <.debug_str+0xcc>
+  67:	72 65                	jb     ce <.debug_str+0xce>
+    call set_gaussian(h, icenter, decay)
+  69:	64 00 67 72          	add    %ah,%fs:0x72(%rdi)
+  6d:	69 64 5f 73 69 7a 65 	imul   $0x657a69,0x73(%rdi,%rbx,2),%esp
+  74:	00 
+  75:	69 6e 74 65 67 65 72 	imul   $0x72656765,0x74(%rsi),%ebp
+  7c:	28 6b 69             	sub    %ch,0x69(%rbx)
+  7f:	6e                   	outsb  %ds:(%rsi),(%dx)
+  80:	64 3d 34 29 00 73    	fs cmp $0x73002934,%eax
+  86:	65 74 5f             	gs je  e8 <.debug_str+0xe8>
+  89:	67 61                	addr32 (bad) 
+  8b:	75 73                	jne    100 <.debug_str+0x100>
+  8d:	73 69                	jae    f8 <.debug_str+0xf8>
+  8f:	61                   	(bad)  
+  90:	6e                   	outsb  %ds:(%rsi),(%dx)
+  91:	00 6d 6f             	add    %ch,0x6f(%rbp)
+  94:	64 5f                	fs pop %rdi
+  96:	64 69 66 66 00 47 4e 	imul   $0x554e4700,%fs:0x66(%rsi),%esp
+  9d:	55 
+  9e:	20 46 6f             	and    %al,0x6f(%rsi)
+  a1:	72 74                	jb     117 <.debug_str+0x117>
+  a3:	72 61                	jb     106 <.debug_str+0x106>
+  a5:	6e                   	outsb  %ds:(%rsi),(%dx)
+  a6:	32 30                	xor    (%rax),%dh
+  a8:	30 38                	xor    %bh,(%rax)
+  aa:	20 39                	and    %bh,(%rcx)
+  ac:	2e 33 2e             	xor    %cs:(%rsi),%ebp
+  af:	30 20                	xor    %ah,(%rax)
+  b1:	2d 6d 74 75 6e       	sub    $0x6e75746d,%eax
+  b6:	65 3d 67 65 6e 65    	gs cmp $0x656e6567,%eax
+  bc:	72 69                	jb     127 <.debug_str+0x127>
+  be:	63 20                	movslq (%rax),%esp
+  c0:	2d 6d 61 72 63       	sub    $0x6372616d,%eax
+  c5:	68 3d 78 38 36       	pushq  $0x3638783d
+  ca:	2d 36 34 20 2d       	sub    $0x2d203436,%eax
+  cf:	67 67 64 62 33       	addr32 addr32 fs (bad) 
+  d4:	20 2d 66 69 6e 74    	and    %ch,0x746e6966(%rip)        # 746e6a40 <main+0x746e60f5>
+  da:	72 69                	jb     145 <.debug_str+0x145>
+  dc:	6e                   	outsb  %ds:(%rsi),(%dx)
+  dd:	73 69                	jae    148 <.debug_str+0x148>
+  df:	63 2d 6d 6f 64 75    	movslq 0x75646f6d(%rip),%ebp        # 75647052 <main+0x75646707>
+  e5:	6c                   	insb   (%dx),%es:(%rdi)
+  e6:	65 73 2d             	gs jae 116 <.debug_str+0x116>
+  e9:	70 61                	jo     14c <.debug_str+0x14c>
+  eb:	74 68                	je     155 <.debug_str+0x155>
+  ed:	20 2f                	and    %ch,(%rdi)
+  ef:	75 73                	jne    164 <.debug_str+0x164>
+  f1:	72 2f                	jb     122 <.debug_str+0x122>
+  f3:	6c                   	insb   (%dx),%es:(%rdi)
+  f4:	69 62 2f 67 63 63 2f 	imul   $0x2f636367,0x2f(%rdx),%esp
+    u = 0
+  fb:	78 38                	js     135 <.debug_str+0x135>
+  fd:	36 5f                	ss pop %rdi
+  ff:	36 34 2d             	ss xor $0x2d,%al
+ 102:	6c                   	insb   (%dx),%es:(%rdi)
+ 103:	69 6e 75 78 2d 67 6e 	imul   $0x6e672d78,0x75(%rsi),%ebp
+ 10a:	75 2f                	jne    13b <.debug_str+0x13b>
+ 10c:	39 2f                	cmp    %ebp,(%rdi)
+ 10e:	66 69 6e 63 6c 75    	imul   $0x756c,0x63(%rsi),%bp
+    write (9, *) 0, h
+ 114:	64 65 20 2d 66 70 72 	fs and %ch,%gs:0x65727066(%rip)        # 65727182 <main+0x65726837>
+ 11b:	65 
+ 11c:	2d 69 6e 63 6c       	sub    $0x6c636e69,%eax
+ 121:	75 64                	jne    187 <.debug_str+0x187>
+ 123:	65 3d 2f 75 73 72    	gs cmp $0x7273752f,%eax
+ 129:	2f                   	(bad)  
+ 12a:	6c                   	insb   (%dx),%es:(%rdi)
+ 12b:	69 62 2f 67 63 63 2f 	imul   $0x2f636367,0x2f(%rdx),%esp
+ 132:	78 38                	js     16c <.debug_str+0x16c>
+ 134:	36 5f                	ss pop %rdi
+ 136:	36 34 2d             	ss xor $0x2d,%al
+ 139:	6c                   	insb   (%dx),%es:(%rdi)
+ 13a:	69 6e 75 78 2d 67 6e 	imul   $0x6e672d78,0x75(%rsi),%ebp
+ 141:	75 2f                	jne    172 <.debug_str+0x172>
+ 143:	39 2f                	cmp    %ebp,(%rdi)
+ 145:	2e 2e 2f             	cs cs (bad) 
+ 148:	2e 2e 2f             	cs cs (bad) 
+ 14b:	2e 2e 2f             	cs cs (bad) 
+ 14e:	2e 2e 2f             	cs cs (bad) 
+ 151:	78 38                	js     18b <.debug_str+0x18b>
+ 153:	36 5f                	ss pop %rdi
+ 155:	36 34 2d             	ss xor $0x2d,%al
+ 158:	6c                   	insb   (%dx),%es:(%rdi)
+ 159:	69 6e 75 78 2d 67 6e 	imul   $0x6e672d78,0x75(%rsi),%ebp
+ 160:	75 2f                	jne    191 <.debug_str+0x191>
+ 162:	69 6e 63 6c 75 64 65 	imul   $0x6564756c,0x63(%rsi),%ebp
+ 169:	2f                   	(bad)  
+ 16a:	66 69 6e 63 6c 75    	imul   $0x756c,0x63(%rsi),%bp
+ 170:	64 65 2f             	fs gs (bad) 
+ 173:	6d                   	insl   (%dx),%es:(%rdi)
+ 174:	61                   	(bad)  
+ 175:	74 68                	je     1df <.debug_str+0x1df>
+ 177:	2d 76 65 63 74       	sub    $0x74636576,%eax
+ 17c:	6f                   	outsl  %ds:(%rsi),(%dx)
+ 17d:	72 2d                	jb     1ac <.debug_str+0x1ac>
+ 17f:	66 6f                	outsw  %ds:(%rsi),(%dx)
+ 181:	72 74                	jb     1f7 <.debug_str+0x1f7>
+ 183:	72 61                	jb     1e6 <.debug_str+0x1e6>
+ 185:	6e                   	outsb  %ds:(%rsi),(%dx)
+ 186:	2e 68 00 64 65 63    	cs pushq $0x63656400
+ 18c:	61                   	(bad)  
+ 18d:	79 00                	jns    18f <.debug_str+0x18f>
+ 18f:	63 68 61             	movslq 0x61(%rax),%ebp
+ 192:	72 61                	jb     1f5 <.debug_str+0x1f5>
+ 194:	63 74 65 72          	movslq 0x72(%rbp,%riz,2),%esi
+ 198:	28 6b 69             	sub    %ch,0x69(%rbx)
+ 19b:	6e                   	outsb  %ds:(%rsi),(%dx)
+ 19c:	64 3d 31 29 00 2f    	fs cmp $0x2f002931,%eax
+ 1a2:	68 6f 6d 65 2f       	pushq  $0x2f656d6f
+ 1a7:	75 62                	jne    20b <.debug_str+0x20b>
+ 1a9:	75 6e                	jne    219 <.debug_str+0x219>
+ 1ab:	74 75                	je     222 <.debug_str+0x222>
+ 1ad:	2f                   	(bad)  
+ 1ae:	45 6e                	rex.RB outsb %ds:(%rsi),(%dx)
+ 1b0:	67 69 6e 65 65 72 69 	imul   $0x6e697265,0x65(%esi),%ebp
+ 1b7:	6e 
+ 1b8:	67 2f                	addr32 (bad) 
+ 1ba:	50                   	push   %rax
+ 1bb:	72 6f                	jb     22c <.debug_str+0x22c>
+ 1bd:	67 72 61             	addr32 jb 221 <.debug_str+0x221>
+ 1c0:	6d                   	insl   (%dx),%es:(%rdi)
+ 1c1:	6d                   	insl   (%dx),%es:(%rdi)
+ 1c2:	69 6e 67 2f 46 6f 72 	imul   $0x726f462f,0x67(%rsi),%ebp
+ 1c9:	74 72                	je     23d <.debug_str+0x23d>
+ 1cb:	61                   	(bad)  
+ 1cc:	6e                   	outsb  %ds:(%rsi),(%dx)
+ 1cd:	2f                   	(bad)  
+ 1ce:	4d 6f                	rex.WRB outsl %ds:(%rsi),(%dx)
+ 1d0:	64 65 72 6e          	fs gs jb 242 <.debug_str+0x242>
+ 1d4:	5f                   	pop    %rdi
+ 1d5:	46 6f                	rex.RX outsl %ds:(%rsi),(%dx)
+ 1d7:	72 74                	jb     24d <.debug_str+0x24d>
+ 1d9:	72 61                	jb     23c <.debug_str+0x23c>
+ 1db:	6e                   	outsb  %ds:(%rsi),(%dx)
+ 1dc:	2f                   	(bad)  
+ 1dd:	43 68 61 70 74 65    	rex.XB pushq $0x65747061
+ 1e3:	72 5f                	jb     244 <.debug_str+0x244>
+ 1e5:	34 2f                	xor    $0x2f,%al
+ 1e7:	4c 69 73 74 69 6e 67 	imul   $0x5f676e69,0x74(%rbx),%r14
+ 1ee:	5f 
+ 1ef:	34 5f                	xor    $0x5f,%al
+ 1f1:	31 30                	xor    %esi,(%rax)
+ 1f3:	00 61 72             	add    %ah,0x72(%rcx)
+ 1f6:	67 63 00             	movslq (%eax),%eax
+ 1f9:	5f                   	pop    %rdi
+ 1fa:	5f                   	pop    %rdi
+ 1fb:	6d                   	insl   (%dx),%es:(%rdi)
+ 1fc:	6f                   	outsl  %ds:(%rsi),(%dx)
+ 1fd:	64 5f                	fs pop %rdi
+ 1ff:	69 6e 69 74 69 61 6c 	imul   $0x6c616974,0x69(%rsi),%ebp
+ 206:	5f                   	pop    %rdi
+ 207:	4d                   	rex.WRB
+ 208:	4f                   	rex.WRXB
+ 209:	44 5f                	rex.R pop %rdi
+    close(9)
+ 20b:	73 65                	jae    272 <options.27.4024+0x232>
+ 20d:	74 5f                	je     26e <options.27.4024+0x22e>
+ 20f:	67 61                	addr32 (bad) 
+ 211:	75 73                	jne    286 <options.27.4024+0x246>
+ 213:	73 69                	jae    27e <options.27.4024+0x23e>
+ 215:	61                   	(bad)  
+ 216:	6e                   	outsb  %ds:(%rsi),(%dx)
+ 217:	00 74 73 75          	add    %dh,0x75(%rbx,%rsi,2)
+ 21b:	6e                   	outsb  %ds:(%rsi),(%dx)
+ 21c:	61                   	(bad)  
+ 21d:	6d                   	insl   (%dx),%es:(%rdi)
+ 21e:	69 2e 66 39 35 00    	imul   $0x353966,(%rsi),%ebp
+ 224:	69 6e 74 65 67 65 72 	imul   $0x72656765,0x74(%rsi),%ebp
+ 22b:	28 6b 69             	sub    %ch,0x69(%rbx)
+ 22e:	6e                   	outsb  %ds:(%rsi),(%dx)
+ 22f:	64 3d 38 29 00 6d    	fs cmp $0x6d002938,%eax
+ 235:	6f                   	outsl  %ds:(%rsi),(%dx)
+ 236:	64 5f                	fs pop %rdi
+ 238:	69 6e 69 74 69 61 6c 	imul   $0x6c616974,0x69(%rsi),%ebp
+ 23f:	00 68 6d             	add    %ch,0x6d(%rax)
+ 242:	65 61                	gs (bad) 
+ 244:	6e                   	outsb  %ds:(%rsi),(%dx)
+    time_loop: do n = 1, num_time_steps
+ 245:	00 64 69 66          	add    %ah,0x66(%rcx,%rbp,2)
+ 249:	66 00 72 65          	data16 add %dh,0x65(%rdx)
+ 24d:	61                   	(bad)  
+ 24e:	6c                   	insb   (%dx),%es:(%rdi)
+ 24f:	28 6b 69             	sub    %ch,0x69(%rbx)
+ 252:	6e                   	outsb  %ds:(%rsi),(%dx)
+ 253:	64 3d 34 29 00 61    	fs cmp $0x61002934,%eax
+ 259:	72 67                	jb     2c2 <options.27.4024+0x282>
+ 25b:	76 00                	jbe    25d <options.27.4024+0x21d>
+
+Disassembly of section .comment:
+
+0000000000000000 <.comment>:
+program tsunami
+   0:	00 47 43             	add    %al,0x43(%rdi)
+   3:	43 3a 20             	rex.XB cmp (%r8),%spl
+   6:	28 55 62             	sub    %dl,0x62(%rbp)
+   9:	75 6e                	jne    79 <options.27.4024+0x39>
+    open(9, file = 'data.txt')
+   b:	74 75                	je     82 <options.27.4024+0x42>
+   d:	20 39                	and    %bh,(%rcx)
+   f:	2e 33 2e             	xor    %cs:(%rsi),%ebp
+  12:	30 2d 31 37 75 62    	xor    %ch,0x62753731(%rip)        # 62753749 <main+0x62752dfe>
+  18:	75 6e                	jne    88 <options.27.4024+0x48>
+  1a:	74 75                	je     91 <options.27.4024+0x51>
+  1c:	31 7e 32             	xor    %edi,0x32(%rsi)
+  1f:	30 2e                	xor    %ch,(%rsi)
+  21:	30 34 29             	xor    %dh,(%rcx,%rbp,1)
+  24:	20 39                	and    %bh,(%rcx)
+  26:	2e 33 2e             	xor    %cs:(%rsi),%ebp
+  29:	30 00                	xor    %al,(%rax)
+
+Disassembly of section .eh_frame:
+
+0000000000000000 <.eh_frame>:
+   0:	14 00                	adc    $0x0,%al
+   2:	00 00                	add    %al,(%rax)
+   4:	00 00                	add    %al,(%rax)
+   6:	00 00                	add    %al,(%rax)
+   8:	01 7a 52             	add    %edi,0x52(%rdx)
+   b:	00 01                	add    %al,(%rcx)
+   d:	78 10                	js     1f <.eh_frame+0x1f>
+   f:	01 1b                	add    %ebx,(%rbx)
+  11:	0c 07                	or     $0x7,%al
+  13:	08 90 01 00 00 1c    	or     %dl,0x1c000001(%rax)
+  19:	00 00                	add    %al,(%rax)
+  1b:	00 1c 00             	add    %bl,(%rax,%rax,1)
+  1e:	00 00                	add    %al,(%rax)
+  20:	00 00                	add    %al,(%rax)
+			20: R_X86_64_PC32	.text
+  22:	00 00                	add    %al,(%rax)
+  24:	4b 09 00             	rex.WXB or %rax,(%r8)
+  27:	00 00                	add    %al,(%rax)
+  29:	41 0e                	rex.B (bad) 
+  2b:	10 86 02 43 0d 06    	adc    %al,0x60d4302(%rsi)
+  31:	03 46 09             	add    0x9(%rsi),%eax
+  34:	0c 07                	or     $0x7,%al
+  36:	08 00                	or     %al,(%rax)
+  38:	1c 00                	sbb    $0x0,%al
+  3a:	00 00                	add    %al,(%rax)
+  3c:	3c 00                	cmp    $0x0,%al
+  3e:	00 00                	add    %al,(%rax)
+  40:	00 00                	add    %al,(%rax)
+			40: R_X86_64_PC32	.text+0x94b
+  42:	00 00                	add    %al,(%rax)
+  44:	3d 00 00 00 00       	cmp    $0x0,%eax
+  49:	41 0e                	rex.B (bad) 
+  4b:	10 86 02 43 0d 06    	adc    %al,0x60d4302(%rsi)
+  51:	78 0c                	js     5f <options.27.4024+0x1f>
+  53:	07                   	(bad)  
+  54:	08 00                	or     %al,(%rax)
+	...
+Contents of the .debug_info section (loaded from tsunami.o):
+
+  Compilation Unit @ offset 0x0:
+   Length:        0x2a4 (32-bit)
+   Version:       4
+   Abbrev Offset: 0x0
+   Pointer Size:  8
+ <0><b>: Abbrev Number: 1 (DW_TAG_compile_unit)
+    <c>   DW_AT_producer    : (indirect string, offset: 0x9b): GNU Fortran2008 9.3.0 -mtune=generic -march=x86-64 -ggdb3 -fintrinsic-modules-path /usr/lib/gcc/x86_64-linux-gnu/9/finclude -fpre-include=/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include/finclude/math-vector-fortran.h
+    <10>   DW_AT_language    : 14	(Fortran 95)
+    <11>   DW_AT_identifier_case: 2	(down_case)
+    <12>   DW_AT_name        : (indirect string, offset: 0x218): tsunami.f95
+    <16>   DW_AT_comp_dir    : (indirect string, offset: 0x1a1): /home/ubuntu/Engineering/Programming/Fortran/Modern_Fortran/Chapter_4/Listing_4_10
+    <1a>   DW_AT_low_pc      : 0x0
+    <22>   DW_AT_high_pc     : 0x988
+    <2a>   DW_AT_stmt_list   : 0x0
+    <2e>   DW_AT_GNU_macros  : 0x0
+ <1><32>: Abbrev Number: 2 (DW_TAG_base_type)
+    <33>   DW_AT_byte_size   : 8
+    <34>   DW_AT_encoding    : 5	(signed)
+    <35>   DW_AT_name        : (indirect string, offset: 0x224): integer(kind=8)
+ <1><39>: Abbrev Number: 3 (DW_TAG_pointer_type)
+    <3a>   DW_AT_byte_size   : 8
+ <1><3b>: Abbrev Number: 4 (DW_TAG_restrict_type)
+    <3c>   DW_AT_type        : <0x39>
+ <1><40>: Abbrev Number: 5 (DW_TAG_subprogram)
+    <41>   DW_AT_name        : (indirect string, offset: 0xc): tsunami
+    <45>   DW_AT_decl_file   : 1
+    <46>   DW_AT_decl_line   : 1
+    <47>   DW_AT_main_subprogram: 1
+    <47>   DW_AT_calling_convention: 2	(program)
+    <48>   DW_AT_low_pc      : 0x0
+    <50>   DW_AT_high_pc     : 0x94b
+    <58>   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
+    <5a>   DW_AT_GNU_all_tail_call_sites: 1
+    <5a>   DW_AT_sibling     : <0x14e>
+ <2><5e>: Abbrev Number: 6 (DW_TAG_imported_declaration)
+    <5f>   DW_AT_decl_file   : 1
+    <60>   DW_AT_decl_line   : 5
+    <61>   DW_AT_import      : <0x157>	[Abbrev Number: 18 (DW_TAG_subprogram)]
+ <2><65>: Abbrev Number: 7 (DW_TAG_imported_declaration)
+    <66>   DW_AT_decl_file   : 1
+    <67>   DW_AT_decl_line   : 4
+    <68>   DW_AT_name        : (indirect string, offset: 0x246): diff
+    <6c>   DW_AT_import      : <0x1d9>	[Abbrev Number: 18 (DW_TAG_subprogram)]
+ <2><70>: Abbrev Number: 8 (DW_TAG_constant)
+    <71>   DW_AT_name        : (indirect string, offset: 0x189): decay
+    <75>   DW_AT_decl_file   : 1
+    <76>   DW_AT_decl_line   : 19
+    <77>   DW_AT_type        : <0x1a9>
+    <7b>   DW_AT_const_value : 4 byte block: a d7 a3 3c 
+ <2><80>: Abbrev Number: 9 (DW_TAG_constant)
+    <81>   DW_AT_name        : dt
+    <84>   DW_AT_decl_file   : 1
+    <85>   DW_AT_decl_line   : 13
+    <86>   DW_AT_type        : <0x1a9>
+    <8a>   DW_AT_const_value : 4 byte block: a d7 a3 3c 
+ <2><8f>: Abbrev Number: 9 (DW_TAG_constant)
+    <90>   DW_AT_name        : dx
+    <93>   DW_AT_decl_file   : 1
+    <94>   DW_AT_decl_line   : 13
+    <95>   DW_AT_type        : <0x1a9>
+    <99>   DW_AT_const_value : 4 byte block: 0 0 80 3f 
+ <2><9e>: Abbrev Number: 9 (DW_TAG_constant)
+    <9f>   DW_AT_name        : g
+    <a1>   DW_AT_decl_file   : 1
+    <a2>   DW_AT_decl_line   : 13
+    <a3>   DW_AT_type        : <0x1a9>
+    <a7>   DW_AT_const_value : 4 byte block: cd cc 1c 41 
+ <2><ac>: Abbrev Number: 10 (DW_TAG_constant)
+    <ad>   DW_AT_name        : (indirect string, offset: 0x6b): grid_size
+    <b1>   DW_AT_decl_file   : 1
+    <b2>   DW_AT_decl_line   : 11
+    <b3>   DW_AT_type        : <0x1c0>
+    <b7>   DW_AT_const_value : 100
+ <2><b8>: Abbrev Number: 8 (DW_TAG_constant)
+    <b9>   DW_AT_name        : (indirect string, offset: 0x240): hmean
+    <bd>   DW_AT_decl_file   : 1
+    <be>   DW_AT_decl_line   : 14
+    <bf>   DW_AT_type        : <0x1a9>
+    <c3>   DW_AT_const_value : 4 byte block: 0 0 20 41 
+ <2><c8>: Abbrev Number: 10 (DW_TAG_constant)
+    <c9>   DW_AT_name        : (indirect string, offset: 0x45): icenter
+    <cd>   DW_AT_decl_file   : 1
+    <ce>   DW_AT_decl_line   : 18
+    <cf>   DW_AT_type        : <0x1c0>
+    <d3>   DW_AT_const_value : 25
+ <2><d4>: Abbrev Number: 11 (DW_TAG_constant)
+    <d5>   DW_AT_name        : (indirect string, offset: 0x14): num_time_steps
+    <d9>   DW_AT_decl_file   : 1
+    <da>   DW_AT_decl_line   : 12
+    <db>   DW_AT_type        : <0x1c0>
+    <df>   DW_AT_const_value : 5000
+ <2><e1>: Abbrev Number: 12 (DW_TAG_variable)
+    <e2>   DW_AT_name        : (indirect string, offset: 0x0): file_exists
+    <e6>   DW_AT_decl_file   : 1
+    <e7>   DW_AT_decl_line   : 21
+    <e8>   DW_AT_type        : <0x293>
+    <ec>   DW_AT_location    : 2 byte block: 91 6c 	(DW_OP_fbreg: -20)
+ <2><ef>: Abbrev Number: 13 (DW_TAG_variable)
+    <f0>   DW_AT_name        : h
+    <f2>   DW_AT_decl_file   : 1
+    <f3>   DW_AT_decl_line   : 16
+    <f4>   DW_AT_type        : <0x29a>
+    <f8>   DW_AT_location    : 3 byte block: 91 d0 7c 	(DW_OP_fbreg: -432)
+ <2><fc>: Abbrev Number: 13 (DW_TAG_variable)
+    <fd>   DW_AT_name        : n
+    <ff>   DW_AT_decl_file   : 1
+    <100>   DW_AT_decl_line   : 9
+    <101>   DW_AT_type        : <0x1b9>
+    <105>   DW_AT_location    : 3 byte block: 91 cc 7c 	(DW_OP_fbreg: -436)
+ <2><109>: Abbrev Number: 13 (DW_TAG_variable)
+    <10a>   DW_AT_name        : u
+    <10c>   DW_AT_decl_file   : 1
+    <10d>   DW_AT_decl_line   : 16
+    <10e>   DW_AT_type        : <0x29a>
+    <112>   DW_AT_location    : 3 byte block: 91 b0 79 	(DW_OP_fbreg: -848)
+ <2><116>: Abbrev Number: 14 (DW_TAG_lexical_block)
+    <117>   DW_AT_low_pc      : 0x69
+    <11f>   DW_AT_high_pc     : 0x91
+    <127>   DW_AT_sibling     : <0x136>
+ <3><12b>: Abbrev Number: 15 (DW_TAG_constant)
+    <12c>   DW_AT_type        : <0x1c0>
+ <3><130>: Abbrev Number: 15 (DW_TAG_constant)
+    <131>   DW_AT_type        : <0x1a9>
+ <3><135>: Abbrev Number: 0
+ <2><136>: Abbrev Number: 16 (DW_TAG_lexical_block)
+    <137>   DW_AT_low_pc      : 0x14c
+    <13f>   DW_AT_high_pc     : 0x1b
+ <3><147>: Abbrev Number: 15 (DW_TAG_constant)
+    <148>   DW_AT_type        : <0x1c0>
+ <3><14c>: Abbrev Number: 0
+ <2><14d>: Abbrev Number: 0
+ <1><14e>: Abbrev Number: 17 (DW_TAG_module)
+    <14f>   DW_AT_name        : (indirect string, offset: 0x234): mod_initial
+    <153>   DW_AT_declaration : 1
+    <153>   DW_AT_sibling     : <0x173>
+ <2><157>: Abbrev Number: 18 (DW_TAG_subprogram)
+    <158>   DW_AT_external    : 1
+    <158>   DW_AT_name        : (indirect string, offset: 0x85): set_gaussian
+    <15c>   DW_AT_decl_file   : 1
+    <15d>   DW_AT_decl_line   : 29
+    <15e>   DW_AT_linkage_name: (indirect string, offset: 0x1f9): __mod_initial_MOD_set_gaussian
+    <162>   DW_AT_declaration : 1
+ <3><162>: Abbrev Number: 19 (DW_TAG_formal_parameter)
+    <163>   DW_AT_type        : <0x179>
+ <3><167>: Abbrev Number: 19 (DW_TAG_formal_parameter)
+    <168>   DW_AT_type        : <0x1b4>
+ <3><16c>: Abbrev Number: 19 (DW_TAG_formal_parameter)
+    <16d>   DW_AT_type        : <0x1cb>
+ <3><171>: Abbrev Number: 0
+ <2><172>: Abbrev Number: 0
+ <1><173>: Abbrev Number: 20 (DW_TAG_reference_type)
+    <174>   DW_AT_byte_size   : 8
+    <175>   DW_AT_type        : <0x17e>
+ <1><179>: Abbrev Number: 4 (DW_TAG_restrict_type)
+    <17a>   DW_AT_type        : <0x173>
+ <1><17e>: Abbrev Number: 21 (DW_TAG_array_type)
+    <17f>   DW_AT_data_location: 2 byte block: 97 6 	(DW_OP_push_object_address; DW_OP_deref)
+    <182>   DW_AT_type        : <0x1a2>
+    <186>   DW_AT_sibling     : <0x1a2>
+ <2><18a>: Abbrev Number: 22 (DW_TAG_subrange_type)
+    <18b>   DW_AT_upper_bound : 11 byte block: 31 97 23 38 6 97 23 30 6 1c 22 	(DW_OP_lit1; DW_OP_push_object_address; DW_OP_plus_uconst: 56; DW_OP_deref; DW_OP_push_object_address; DW_OP_plus_uconst: 48; DW_OP_deref; DW_OP_minus; DW_OP_plus)
+    <197>   DW_AT_byte_stride : 9 byte block: 97 23 28 6 97 23 20 6 1e 	(DW_OP_push_object_address; DW_OP_plus_uconst: 40; DW_OP_deref; DW_OP_push_object_address; DW_OP_plus_uconst: 32; DW_OP_deref; DW_OP_mul)
+ <2><1a1>: Abbrev Number: 0
+ <1><1a2>: Abbrev Number: 2 (DW_TAG_base_type)
+    <1a3>   DW_AT_byte_size   : 4
+    <1a4>   DW_AT_encoding    : 4	(float)
+    <1a5>   DW_AT_name        : (indirect string, offset: 0x24b): real(kind=4)
+ <1><1a9>: Abbrev Number: 23 (DW_TAG_const_type)
+    <1aa>   DW_AT_type        : <0x1a2>
+ <1><1ae>: Abbrev Number: 20 (DW_TAG_reference_type)
+    <1af>   DW_AT_byte_size   : 8
+    <1b0>   DW_AT_type        : <0x1b9>
+ <1><1b4>: Abbrev Number: 4 (DW_TAG_restrict_type)
+    <1b5>   DW_AT_type        : <0x1ae>
+ <1><1b9>: Abbrev Number: 2 (DW_TAG_base_type)
+    <1ba>   DW_AT_byte_size   : 4
+    <1bb>   DW_AT_encoding    : 5	(signed)
+    <1bc>   DW_AT_name        : (indirect string, offset: 0x75): integer(kind=4)
+ <1><1c0>: Abbrev Number: 23 (DW_TAG_const_type)
+    <1c1>   DW_AT_type        : <0x1b9>
+ <1><1c5>: Abbrev Number: 20 (DW_TAG_reference_type)
+    <1c6>   DW_AT_byte_size   : 8
+    <1c7>   DW_AT_type        : <0x1a2>
+ <1><1cb>: Abbrev Number: 4 (DW_TAG_restrict_type)
+    <1cc>   DW_AT_type        : <0x1c5>
+ <1><1d0>: Abbrev Number: 17 (DW_TAG_module)
+    <1d1>   DW_AT_name        : (indirect string, offset: 0x92): mod_diff
+    <1d5>   DW_AT_declaration : 1
+    <1d5>   DW_AT_sibling     : <0x1f0>
+ <2><1d9>: Abbrev Number: 18 (DW_TAG_subprogram)
+    <1da>   DW_AT_external    : 1
+    <1da>   DW_AT_name        : (indirect string, offset: 0x5d): diff_centered
+    <1de>   DW_AT_decl_file   : 1
+    <1df>   DW_AT_decl_line   : 38
+    <1e0>   DW_AT_linkage_name: (indirect string, offset: 0x28): __mod_diff_MOD_diff_centered
+    <1e4>   DW_AT_declaration : 1
+ <3><1e4>: Abbrev Number: 19 (DW_TAG_formal_parameter)
+    <1e5>   DW_AT_type        : <0x1f0>
+ <3><1e9>: Abbrev Number: 19 (DW_TAG_formal_parameter)
+    <1ea>   DW_AT_type        : <0x21e>
+ <3><1ee>: Abbrev Number: 0
+ <2><1ef>: Abbrev Number: 0
+ <1><1f0>: Abbrev Number: 20 (DW_TAG_reference_type)
+    <1f1>   DW_AT_byte_size   : 8
+    <1f2>   DW_AT_type        : <0x1f6>
+ <1><1f6>: Abbrev Number: 21 (DW_TAG_array_type)
+    <1f7>   DW_AT_data_location: 2 byte block: 97 6 	(DW_OP_push_object_address; DW_OP_deref)
+    <1fa>   DW_AT_type        : <0x1a2>
+    <1fe>   DW_AT_sibling     : <0x218>
+ <2><202>: Abbrev Number: 24 (DW_TAG_subrange_type)
+    <203>   DW_AT_lower_bound : 4 byte block: 97 23 30 6 	(DW_OP_push_object_address; DW_OP_plus_uconst: 48; DW_OP_deref)
+    <208>   DW_AT_upper_bound : 4 byte block: 97 23 38 6 	(DW_OP_push_object_address; DW_OP_plus_uconst: 56; DW_OP_deref)
+    <20d>   DW_AT_byte_stride : 9 byte block: 97 23 28 6 97 23 20 6 1e 	(DW_OP_push_object_address; DW_OP_plus_uconst: 40; DW_OP_deref; DW_OP_push_object_address; DW_OP_plus_uconst: 32; DW_OP_deref; DW_OP_mul)
+ <2><217>: Abbrev Number: 0
+ <1><218>: Abbrev Number: 20 (DW_TAG_reference_type)
+    <219>   DW_AT_byte_size   : 8
+    <21a>   DW_AT_type        : <0x223>
+ <1><21e>: Abbrev Number: 4 (DW_TAG_restrict_type)
+    <21f>   DW_AT_type        : <0x218>
+ <1><223>: Abbrev Number: 21 (DW_TAG_array_type)
+    <224>   DW_AT_data_location: 2 byte block: 97 6 	(DW_OP_push_object_address; DW_OP_deref)
+    <227>   DW_AT_type        : <0x1a2>
+    <22b>   DW_AT_sibling     : <0x247>
+ <2><22f>: Abbrev Number: 22 (DW_TAG_subrange_type)
+    <230>   DW_AT_upper_bound : 11 byte block: 31 97 23 38 6 97 23 30 6 1c 22 	(DW_OP_lit1; DW_OP_push_object_address; DW_OP_plus_uconst: 56; DW_OP_deref; DW_OP_push_object_address; DW_OP_plus_uconst: 48; DW_OP_deref; DW_OP_minus; DW_OP_plus)
+    <23c>   DW_AT_byte_stride : 9 byte block: 97 23 28 6 97 23 20 6 1e 	(DW_OP_push_object_address; DW_OP_plus_uconst: 40; DW_OP_deref; DW_OP_push_object_address; DW_OP_plus_uconst: 32; DW_OP_deref; DW_OP_mul)
+ <2><246>: Abbrev Number: 0
+ <1><247>: Abbrev Number: 25 (DW_TAG_subprogram)
+    <248>   DW_AT_external    : 1
+    <248>   DW_AT_name        : (indirect string, offset: 0x23): main
+    <24c>   DW_AT_decl_file   : 1
+    <24d>   DW_AT_decl_line   : 4
+    <24e>   DW_AT_type        : <0x1b9>
+    <252>   DW_AT_low_pc      : 0x94b
+    <25a>   DW_AT_high_pc     : 0x3d
+    <262>   DW_AT_frame_base  : 1 byte block: 9c 	(DW_OP_call_frame_cfa)
+    <264>   DW_AT_GNU_all_tail_call_sites: 1
+    <264>   DW_AT_sibling     : <0x286>
+ <2><268>: Abbrev Number: 26 (DW_TAG_formal_parameter)
+    <269>   DW_AT_name        : (indirect string, offset: 0x1f4): argc
+    <26d>   DW_AT_decl_file   : 1
+    <26e>   DW_AT_decl_line   : 4
+    <26f>   DW_AT_type        : <0x1c0>
+    <273>   DW_AT_location    : 2 byte block: 91 6c 	(DW_OP_fbreg: -20)
+ <2><276>: Abbrev Number: 26 (DW_TAG_formal_parameter)
+    <277>   DW_AT_name        : (indirect string, offset: 0x258): argv
+    <27b>   DW_AT_decl_file   : 1
+    <27c>   DW_AT_decl_line   : 4
+    <27d>   DW_AT_type        : <0x286>
+    <281>   DW_AT_location    : 3 byte block: 91 60 6 	(DW_OP_fbreg: -32; DW_OP_deref)
+ <2><285>: Abbrev Number: 0
+ <1><286>: Abbrev Number: 27 (DW_TAG_pointer_type)
+    <287>   DW_AT_byte_size   : 8
+    <288>   DW_AT_type        : <0x28c>
+ <1><28c>: Abbrev Number: 2 (DW_TAG_base_type)
+    <28d>   DW_AT_byte_size   : 1
+    <28e>   DW_AT_encoding    : 8	(unsigned char)
+    <28f>   DW_AT_name        : (indirect string, offset: 0x18f): character(kind=1)
+ <1><293>: Abbrev Number: 2 (DW_TAG_base_type)
+    <294>   DW_AT_byte_size   : 4
+    <295>   DW_AT_encoding    : 2	(boolean)
+    <296>   DW_AT_name        : (indirect string, offset: 0x4d): logical(kind=4)
+ <1><29a>: Abbrev Number: 28 (DW_TAG_array_type)
+    <29b>   DW_AT_type        : <0x1a2>
+ <2><29f>: Abbrev Number: 29 (DW_TAG_subrange_type)
+    <2a0>   DW_AT_type        : <0x32>
+    <2a4>   DW_AT_upper_bound : 100
+ <2><2a6>: Abbrev Number: 0
+ <1><2a7>: Abbrev Number: 0
+
+Contents of the .debug_abbrev section (loaded from tsunami.o):
+
+  Number TAG (0x0)
+   1      DW_TAG_compile_unit    [has children]
+    DW_AT_producer     DW_FORM_strp
+    DW_AT_language     DW_FORM_data1
+    DW_AT_identifier_case DW_FORM_data1
+    DW_AT_name         DW_FORM_strp
+    DW_AT_comp_dir     DW_FORM_strp
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_stmt_list    DW_FORM_sec_offset
+    DW_AT_GNU_macros   DW_FORM_sec_offset
+    DW_AT value: 0     DW_FORM value: 0
+   2      DW_TAG_base_type    [no children]
+    DW_AT_byte_size    DW_FORM_data1
+    DW_AT_encoding     DW_FORM_data1
+    DW_AT_name         DW_FORM_strp
+    DW_AT value: 0     DW_FORM value: 0
+   3      DW_TAG_pointer_type    [no children]
+    DW_AT_byte_size    DW_FORM_data1
+    DW_AT value: 0     DW_FORM value: 0
+   4      DW_TAG_restrict_type    [no children]
+    DW_AT_type         DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   5      DW_TAG_subprogram    [has children]
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_main_subprogram DW_FORM_flag_present
+    DW_AT_calling_convention DW_FORM_data1
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_frame_base   DW_FORM_exprloc
+    DW_AT_GNU_all_tail_call_sites DW_FORM_flag_present
+    DW_AT_sibling      DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   6      DW_TAG_imported_declaration    [no children]
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_import       DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   7      DW_TAG_imported_declaration    [no children]
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_name         DW_FORM_strp
+    DW_AT_import       DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   8      DW_TAG_constant    [no children]
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_const_value  DW_FORM_block1
+    DW_AT value: 0     DW_FORM value: 0
+   9      DW_TAG_constant    [no children]
+    DW_AT_name         DW_FORM_string
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_const_value  DW_FORM_block1
+    DW_AT value: 0     DW_FORM value: 0
+   10      DW_TAG_constant    [no children]
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_const_value  DW_FORM_data1
+    DW_AT value: 0     DW_FORM value: 0
+   11      DW_TAG_constant    [no children]
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_const_value  DW_FORM_data2
+    DW_AT value: 0     DW_FORM value: 0
+   12      DW_TAG_variable    [no children]
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+   13      DW_TAG_variable    [no children]
+    DW_AT_name         DW_FORM_string
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+   14      DW_TAG_lexical_block    [has children]
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_sibling      DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   15      DW_TAG_constant    [no children]
+    DW_AT_type         DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   16      DW_TAG_lexical_block    [has children]
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT value: 0     DW_FORM value: 0
+   17      DW_TAG_module    [has children]
+    DW_AT_name         DW_FORM_strp
+    DW_AT_declaration  DW_FORM_flag_present
+    DW_AT_sibling      DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   18      DW_TAG_subprogram    [has children]
+    DW_AT_external     DW_FORM_flag_present
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_linkage_name DW_FORM_strp
+    DW_AT_declaration  DW_FORM_flag_present
+    DW_AT value: 0     DW_FORM value: 0
+   19      DW_TAG_formal_parameter    [no children]
+    DW_AT_type         DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   20      DW_TAG_reference_type    [no children]
+    DW_AT_byte_size    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   21      DW_TAG_array_type    [has children]
+    DW_AT_data_location DW_FORM_exprloc
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_sibling      DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   22      DW_TAG_subrange_type    [no children]
+    DW_AT_upper_bound  DW_FORM_exprloc
+    DW_AT_byte_stride  DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+   23      DW_TAG_const_type    [no children]
+    DW_AT_type         DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   24      DW_TAG_subrange_type    [no children]
+    DW_AT_lower_bound  DW_FORM_exprloc
+    DW_AT_upper_bound  DW_FORM_exprloc
+    DW_AT_byte_stride  DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+   25      DW_TAG_subprogram    [has children]
+    DW_AT_external     DW_FORM_flag_present
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_low_pc       DW_FORM_addr
+    DW_AT_high_pc      DW_FORM_data8
+    DW_AT_frame_base   DW_FORM_exprloc
+    DW_AT_GNU_all_tail_call_sites DW_FORM_flag_present
+    DW_AT_sibling      DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   26      DW_TAG_formal_parameter    [no children]
+    DW_AT_name         DW_FORM_strp
+    DW_AT_decl_file    DW_FORM_data1
+    DW_AT_decl_line    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_location     DW_FORM_exprloc
+    DW_AT value: 0     DW_FORM value: 0
+   27      DW_TAG_pointer_type    [no children]
+    DW_AT_byte_size    DW_FORM_data1
+    DW_AT_type         DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   28      DW_TAG_array_type    [has children]
+    DW_AT_type         DW_FORM_ref4
+    DW_AT value: 0     DW_FORM value: 0
+   29      DW_TAG_subrange_type    [no children]
+    DW_AT_type         DW_FORM_ref4
+    DW_AT_upper_bound  DW_FORM_sdata
+    DW_AT value: 0     DW_FORM value: 0
+
+Contents of the .debug_aranges section (loaded from tsunami.o):
+
+  Length:                   44
+  Version:                  2
+  Offset into .debug_info:  0x0
+  Pointer Size:             8
+  Segment Size:             0
+
+    Address            Length
+    0000000000000000 0000000000000988 
+    0000000000000000 0000000000000000 
+
+Contents of the .debug_macro section (loaded from tsunami.o):
+
+  Offset:                      0x0
+  Version:                     4
+  Offset size:                 4
+  Offset into .debug_line:     0x0
+
+ DW_MACRO_start_file - lineno: 0 filenum: 1 filename: tsunami.f95
+ DW_MACRO_start_file - lineno: 0 filenum: 2 filename: /usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include/finclude/math-vector-fortran.h
+ DW_MACRO_end_file
+ DW_MACRO_end_file
+
+Raw dump of debug contents of section .debug_line (loaded from tsunami.o):
+
+  Offset:                      0x0
+  Length:                      285
+  DWARF Version:               3
+  Prologue Length:             137
+  Minimum Instruction Length:  1
+  Initial value of 'is_stmt':  1
+  Line Base:                   -5
+  Line Range:                  14
+  Opcode Base:                 13
+
+ Opcodes:
+  Opcode 1 has 0 args
+  Opcode 2 has 1 arg
+  Opcode 3 has 1 arg
+  Opcode 4 has 1 arg
+  Opcode 5 has 1 arg
+  Opcode 6 has 0 args
+  Opcode 7 has 0 args
+  Opcode 8 has 0 args
+  Opcode 9 has 1 arg
+  Opcode 10 has 0 args
+  Opcode 11 has 0 args
+  Opcode 12 has 1 arg
+
+ The Directory Table (offset 0x1b):
+  1	/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include/finclude
+
+ The File Name Table (offset 0x6a):
+  Entry	Dir	Time	Size	Name
+  1	0	0	0	tsunami.f95
+  2	1	0	0	math-vector-fortran.h
+
+ Line Number Statements:
+  [0x00000093]  Extended opcode 2: set Address to 0x0
+  [0x0000009e]  Copy
+  [0x0000009f]  Advance Line by 22 to 23
+  [0x000000a1]  Special opcode 159: advance Address by 11 to 0xb and Line by 0 to 23
+  [0x000000a2]  Advance PC by 94 to 0x69
+  [0x000000a4]  Special opcode 11: advance Address by 0 to 0x69 and Line by 6 to 29
+  [0x000000a5]  Advance PC by 145 to 0xfa
+  [0x000000a8]  Special opcode 6: advance Address by 0 to 0xfa and Line by 1 to 30
+  [0x000000a9]  Advance PC by constant 17 to 0x10b
+  [0x000000aa]  Special opcode 92: advance Address by 6 to 0x111 and Line by 3 to 33
+  [0x000000ab]  Advance PC by 249 to 0x20a
+  [0x000000ae]  Special opcode 6: advance Address by 0 to 0x20a and Line by 1 to 34
+  [0x000000af]  Advance PC by 59 to 0x245
+  [0x000000b1]  Special opcode 7: advance Address by 0 to 0x245 and Line by 2 to 36
+  [0x000000b2]  Extended opcode 4: set Discriminator to 1
+  [0x000000b6]  Set is_stmt to 0
+  [0x000000b7]  Special opcode 145: advance Address by 10 to 0x24f and Line by 0 to 36
+  [0x000000b8]  Set is_stmt to 1
+  [0x000000b9]  Advance PC by constant 17 to 0x260
+  [0x000000ba]  Special opcode 119: advance Address by 8 to 0x268 and Line by 2 to 38
+  [0x000000bb]  Extended opcode 4: set Discriminator to 3
+  [0x000000bf]  Set is_stmt to 0
+  [0x000000c0]  Advance PC by 519 to 0x46f
+  [0x000000c3]  Special opcode 5: advance Address by 0 to 0x46f and Line by 0 to 38
+  [0x000000c4]  Extended opcode 4: set Discriminator to 2
+  [0x000000c8]  Special opcode 89: advance Address by 6 to 0x475 and Line by 0 to 38
+  [0x000000c9]  Set is_stmt to 1
+  [0x000000ca]  Advance PC by 96 to 0x4d5
+  [0x000000cc]  Special opcode 6: advance Address by 0 to 0x4d5 and Line by 1 to 39
+  [0x000000cd]  Extended opcode 4: set Discriminator to 4
+  [0x000000d1]  Set is_stmt to 0
+  [0x000000d2]  Advance PC by 121 to 0x54e
+  [0x000000d4]  Special opcode 5: advance Address by 0 to 0x54e and Line by 0 to 39
+  [0x000000d5]  Extended opcode 4: set Discriminator to 3
+  [0x000000d9]  Special opcode 89: advance Address by 6 to 0x554 and Line by 0 to 39
+  [0x000000da]  Extended opcode 4: set Discriminator to 2
+  [0x000000de]  Advance PC by 52 to 0x588
+  [0x000000e0]  Special opcode 5: advance Address by 0 to 0x588 and Line by 0 to 39
+  [0x000000e1]  Extended opcode 4: set Discriminator to 7
+  [0x000000e5]  Advance PC by 146 to 0x61a
+  [0x000000e8]  Special opcode 5: advance Address by 0 to 0x61a and Line by 0 to 39
+  [0x000000e9]  Extended opcode 4: set Discriminator to 6
+  [0x000000ed]  Special opcode 89: advance Address by 6 to 0x620 and Line by 0 to 39
+  [0x000000ee]  Set is_stmt to 1
+  [0x000000ef]  Advance PC by 52 to 0x654
+  [0x000000f1]  Special opcode 9: advance Address by 0 to 0x654 and Line by 4 to 43
+  [0x000000f2]  Advance PC by 95 to 0x6b3
+  [0x000000f4]  Special opcode 6: advance Address by 0 to 0x6b3 and Line by 1 to 44
+  [0x000000f5]  Special opcode 160: advance Address by 11 to 0x6be and Line by 1 to 45
+  [0x000000f6]  Extended opcode 4: set Discriminator to 2
+  [0x000000fa]  Advance PC by 174 to 0x76c
+  [0x000000fd]  Special opcode 7: advance Address by 0 to 0x76c and Line by 2 to 47
+  [0x000000fe]  Extended opcode 4: set Discriminator to 1
+  [0x00000102]  Advance PC by 144 to 0x7fc
+  [0x00000105]  Special opcode 8: advance Address by 0 to 0x7fc and Line by 3 to 50
+  [0x00000106]  Extended opcode 4: set Discriminator to 1
+  [0x0000010a]  Advance Line by -14 to 36
+  [0x0000010c]  Advance PC by 252 to 0x8f8
+  [0x0000010f]  Copy
+  [0x00000110]  Advance Line by 14 to 50
+  [0x00000112]  Advance PC by constant 17 to 0x909
+  [0x00000113]  Special opcode 47: advance Address by 3 to 0x90c and Line by 0 to 50
+  [0x00000114]  Special opcode 23: advance Address by 1 to 0x90d and Line by 4 to 54
+  [0x00000115]  Advance PC by 59 to 0x948
+  [0x00000117]  Special opcode 7: advance Address by 0 to 0x948 and Line by 2 to 56
+  [0x00000118]  Advance Line by -52 to 4
+  [0x0000011a]  Special opcode 47: advance Address by 3 to 0x94b and Line by 0 to 4
+  [0x0000011b]  Special opcode 215: advance Address by 15 to 0x95a and Line by 0 to 4
+  [0x0000011c]  Advance PC by 46 to 0x988
+  [0x0000011e]  Extended opcode 1: End of Sequence
+
+
+Contents of the .debug_str section (loaded from tsunami.o):
+
+  0x00000000 66696c65 5f657869 73747300 7473756e file_exists.tsun
+  0x00000010 616d6900 6e756d5f 74696d65 5f737465 ami.num_time_ste
+  0x00000020 7073006d 61696e00 5f5f6d6f 645f6469 ps.main.__mod_di
+  0x00000030 66665f4d 4f445f64 6966665f 63656e74 ff_MOD_diff_cent
+  0x00000040 65726564 00696365 6e746572 006c6f67 ered.icenter.log
+  0x00000050 6963616c 286b696e 643d3429 00646966 ical(kind=4).dif
+  0x00000060 665f6365 6e746572 65640067 7269645f f_centered.grid_
+  0x00000070 73697a65 00696e74 65676572 286b696e size.integer(kin
+  0x00000080 643d3429 00736574 5f676175 73736961 d=4).set_gaussia
+  0x00000090 6e006d6f 645f6469 66660047 4e552046 n.mod_diff.GNU F
+  0x000000a0 6f727472 616e3230 30382039 2e332e30 ortran2008 9.3.0
+  0x000000b0 202d6d74 756e653d 67656e65 72696320  -mtune=generic 
+  0x000000c0 2d6d6172 63683d78 38362d36 34202d67 -march=x86-64 -g
+  0x000000d0 67646233 202d6669 6e747269 6e736963 gdb3 -fintrinsic
+  0x000000e0 2d6d6f64 756c6573 2d706174 68202f75 -modules-path /u
+  0x000000f0 73722f6c 69622f67 63632f78 38365f36 sr/lib/gcc/x86_6
+  0x00000100 342d6c69 6e75782d 676e752f 392f6669 4-linux-gnu/9/fi
+  0x00000110 6e636c75 6465202d 66707265 2d696e63 nclude -fpre-inc
+  0x00000120 6c756465 3d2f7573 722f6c69 622f6763 lude=/usr/lib/gc
+  0x00000130 632f7838 365f3634 2d6c696e 75782d67 c/x86_64-linux-g
+  0x00000140 6e752f39 2f2e2e2f 2e2e2f2e 2e2f2e2e nu/9/../../../..
+  0x00000150 2f783836 5f36342d 6c696e75 782d676e /x86_64-linux-gn
+  0x00000160 752f696e 636c7564 652f6669 6e636c75 u/include/finclu
+  0x00000170 64652f6d 6174682d 76656374 6f722d66 de/math-vector-f
+  0x00000180 6f727472 616e2e68 00646563 61790063 ortran.h.decay.c
+  0x00000190 68617261 63746572 286b696e 643d3129 haracter(kind=1)
+  0x000001a0 002f686f 6d652f75 62756e74 752f456e ./home/ubuntu/En
+  0x000001b0 67696e65 6572696e 672f5072 6f677261 gineering/Progra
+  0x000001c0 6d6d696e 672f466f 72747261 6e2f4d6f mming/Fortran/Mo
+  0x000001d0 6465726e 5f466f72 7472616e 2f436861 dern_Fortran/Cha
+  0x000001e0 70746572 5f342f4c 69737469 6e675f34 pter_4/Listing_4
+  0x000001f0 5f313000 61726763 005f5f6d 6f645f69 _10.argc.__mod_i
+  0x00000200 6e697469 616c5f4d 4f445f73 65745f67 nitial_MOD_set_g
+  0x00000210 61757373 69616e00 7473756e 616d692e aussian.tsunami.
+  0x00000220 66393500 696e7465 67657228 6b696e64 f95.integer(kind
+  0x00000230 3d382900 6d6f645f 696e6974 69616c00 =8).mod_initial.
+  0x00000240 686d6561 6e006469 66660072 65616c28 hmean.diff.real(
+  0x00000250 6b696e64 3d342900 61726776 00       kind=4).argv.
+
+Contents of the .eh_frame section (loaded from tsunami.o):
+
+
+00000000 0000000000000014 00000000 CIE
+  Version:               1
+  Augmentation:          "zR"
+  Code alignment factor: 1
+  Data alignment factor: -8
+  Return address column: 16
+  Augmentation data:     1b
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_offset: r16 (rip) at cfa-8
+  DW_CFA_nop
+  DW_CFA_nop
+
+00000018 000000000000001c 0000001c FDE cie=00000000 pc=0000000000000000..000000000000094b
+  DW_CFA_advance_loc: 1 to 0000000000000001
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_offset: r6 (rbp) at cfa-16
+  DW_CFA_advance_loc: 3 to 0000000000000004
+  DW_CFA_def_cfa_register: r6 (rbp)
+  DW_CFA_advance_loc2: 2374 to 000000000000094a
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_nop
+
+00000038 000000000000001c 0000003c FDE cie=00000000 pc=000000000000094b..0000000000000988
+  DW_CFA_advance_loc: 1 to 000000000000094c
+  DW_CFA_def_cfa_offset: 16
+  DW_CFA_offset: r6 (rbp) at cfa-16
+  DW_CFA_advance_loc: 3 to 000000000000094f
+  DW_CFA_def_cfa_register: r6 (rbp)
+  DW_CFA_advance_loc: 56 to 0000000000000987
+  DW_CFA_def_cfa: r7 (rsp) ofs 8
+  DW_CFA_nop
+  DW_CFA_nop
+  DW_CFA_nop
+
