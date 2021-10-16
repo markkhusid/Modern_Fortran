@@ -14,13 +14,12 @@ program stock_gain
     integer :: n
     real    :: gain
     
-    symbols = ['AAPL', 'AMZN', 'CRAY', 'CSCO', 'HPQ ', &
-               'IBM ', 'INTC', 'MSFT', 'NVDA', 'ORCL']
+    symbols = ['AAPL', 'AMZN', 'CRAY', 'CSCO', 'HPQ ', 'IBM ', & 
+               'INTC', 'MSFT', 'NVDA', 'ORCL']
                
     do n = 1, size(symbols)
     
-        call(read_stock, 'data/' // trim(symbols(n)) // '.csv', &
-        time, open, high, low, close, adjclose, volume)
+        call read_stock('data/' // trim(symbols(n)) // '.csv', time, open, high, low, close, adjclose, volume)
         
         adjclose = reverse(adjclose)
         gain = (adjclose(size(adjclose)) - adjclose(1))
